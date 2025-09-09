@@ -1,0 +1,45 @@
+
+:root{
+  --bg:#0f2420;
+  --card:#152c27;
+  --text:#e6f4ee;
+  --muted:#b7d8ca;
+  --brand:#21a366;
+  --brand-2:#0d7a3e;
+  --border: #215245;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+a{color:var(--muted);text-decoration:none}
+a:hover{color:#fff}
+.container{max-width:1080px;margin:0 auto;padding:24px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+nav .left{display:flex;gap:16px;align-items:center}
+nav img{height:40px}
+nav .actions{display:flex;gap:8px;align-items:center}
+.btn{display:inline-block;padding:10px 16px;border:1px solid var(--border);border-radius:10px;background:transparent;color:var(--text);box-shadow:var(--shadow);transition:.2s ease}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.badge{font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:999px;color:var(--muted)}
+.hero{padding:56px 0;display:grid;grid-template-columns:1.2fr 0.8fr;gap:24px}
+.hero .card{background:var(--card);padding:28px;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+h1{font-size:42px;margin:0 0 12px}
+h2{font-size:28px;margin:24px 0 12px}
+p{margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);padding:20px;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+.footer{margin-top:48px;padding:24px;border-top:1px solid var(--border);font-size:14px;color:var(--muted)}
+section{margin:28px 0}
+.small{font-size:13px;color:var(--muted)}
+ul{padding-left:18px;margin:0 0 12px}
+input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:#0b1a16;color:var(--text)}
+label{display:block;margin:8px 0 6px;color:var(--muted)}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.disclaimer{font-size:12px;color:var(--muted)}
+.lang-toggle{border:1px solid var(--border);padding:8px 12px;border-radius:8px;background:#0b1a16}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  nav .left .hide-sm{display:none}
+}
