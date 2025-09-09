@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Frohsinn LLC — Secure • Smart • Global</title>
+  <meta name="description" content="Frohsinn LLC: Finance, Compliance, Media & Operations. Bank-ready docs, lean processes, and audit-friendly structures.">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link href="/styles.css" rel="stylesheet">
+  <script defer src="/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="left">
+        <a href="#top"><img src="/assets/logo.svg" alt="Frohsinn LLC Logo"/></a>
+        <span class="badge hide-sm" data-i18n="hero_kicker">Beratung • Operations • Media</span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#about" data-i18n="nav_about">Über uns</a>
+        <a class="btn" href="#services" data-i18n="nav_services">Leistungen</a>
+        <a class="btn" href="#proof" data-i18n="nav_proof">Nachweise</a>
+        <a class="btn primary" href="#contact" data-i18n="nav_contact">Kontakt</a>
+        <select id="lang" class="lang-toggle">
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </nav>
+
+    <header id="top" class="hero">
+      <div class="card">
+        <div class="badge" data-i18n="hero_kicker">Beratung • Operations • Media</div>
+        <h1 data-i18n="hero_title">Struktur. Compliance. Wachstum.</h1>
+        <p data-i18n="hero_sub">Frohsinn LLC unterstützt Unternehmer und Marken mit präziser Finanz- & Medienstrategie, schlanken Prozessen und bankfähiger Dokumentation.</p>
+        <div style="display:flex;gap:12px;margin-top:8px">
+          <a class="btn primary" href="mailto:frohsinnllc@gmail.com" data-i18n="hero_cta">Unverbindliches Gespräch</a>
+          <a class="btn" href="#services">Our services</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 data-i18n="about_t">Profil</h2>
+        <p data-i18n="about_p1">Wir sind eine in Wyoming (USA) registrierte LLC mit operativem Schwerpunkt in der EU. Unser Fokus: klare Strukturen, rechtskonforme Umsetzung und messbare Ergebnisse.</p>
+        <p data-i18n="about_p2">Für Banken und Partner stellen wir vollständige, nachvollziehbare Unterlagen bereit – inklusive KYC-konformer Prozesse und sauberer Trennung von EU- und US-Aktivitäten.</p>
+        <ul class="small">
+          <li>Kontaktadresse: Eckenheimer Landstraße 124, 60318 Frankfurt am Main</li>
+          <li>Registered in Wyoming, USA</li>
+          <li>Domain: frohsinnglobal.com</li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="services">
+      <h2 data-i18n="services_t">Leistungen</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 data-i18n="s1_t">Finance & Compliance</h3>
+          <p data-i18n="s1_p">Bank-ready Unterlagen, Cash-Flow-Struktur, Rechnungsabläufe, Policy-Frameworks (GDPR, TMG), UBO/BOI-Abstimmung.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="s2_t">Media & Brand</h3>
+          <p data-i18n="s2_p">Brand-Setup, einheitliche Assets, Pitch-Material, Web-Präsenz, Social Content, Reporting.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="s3_t">Ops & Staffing</h3>
+          <p data-i18n="s3_p">Projektsteuerung, Einsatzplanung (Stagehands/Crew), Lieferanten-Onboarding, SLA-Checks, Vor-Ort-Koordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <h2 data-i18n="proof_t">Vertrauen</h2>
+      <p data-i18n="proof_p1">Registriert in Wyoming, USA. Operative Präsenz in Deutschland.</p>
+      <p data-i18n="proof_p2">Dokumentierte Prozesse: Angebots- & Rechnungsabläufe, Vier-Augen-Prinzip, revisionssichere Archivierung.</p>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contact_t">Kontakt</h2>
+      <form action="mailto:frohsinnllc@gmail.com" method="post" enctype="text/plain">
+        <label for="name" data-i18n="form_name">Voller Name</label>
+        <input id="name" name="name">
+        <label for="mail" data-i18n="form_mail">E-Mail</label>
+        <input id="mail" name="email" type="email" required>
+        <label for="msg" data-i18n="form_msg">Worum geht es?</label>
+        <textarea id="msg" name="message" rows="5"></textarea>
+        <button class="btn primary" type="submit" data-i18n="form_btn">Nachricht senden</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <span>© 2025 Frohsinn LLC — Alle Rechte vorbehalten.</span>
+      <span><a href="/imprint.html">Impressum</a> · <a href="/privacy.html">Datenschutz</a> · <a href="/terms.html">AGB</a></span>
+    </footer>
+  </div>
+</body>
+</html>
