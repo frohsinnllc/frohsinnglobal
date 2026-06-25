@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Export a ChatGPT or Claude Conversation to PDF, Markdown or HTML</title>
+  <meta name="description" content="Four ways to save and export your ChatGPT, Claude, Gemini or Perplexity conversations to PDF, Markdown or HTML — including a clean one-click method that keeps code blocks intact.">
+  <link rel="canonical" href="https://frohsinnglobal.com/blog/export-chatgpt-conversation-pdf-markdown.html">
+  <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Export a ChatGPT or Claude Conversation to PDF, Markdown or HTML">
+  <meta property="og:description" content="Four ways to save your AI conversations to PDF, Markdown or HTML — including a clean one-click export that keeps code blocks intact.">
+  <meta property="og:url" content="https://frohsinnglobal.com/blog/export-chatgpt-conversation-pdf-markdown.html">
+  <meta name="twitter:card" content="summary">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Export a ChatGPT or Claude Conversation to PDF, Markdown or HTML",
+    "description": "Four ways to save and export your ChatGPT, Claude, Gemini or Perplexity conversations to PDF, Markdown or HTML.",
+    "author": {"@type": "Organization", "name": "Frohsinn LLC"},
+    "publisher": {"@type": "Organization", "name": "Frohsinn LLC"},
+    "mainEntityOfPage": "https://frohsinnglobal.com/blog/export-chatgpt-conversation-pdf-markdown.html",
+    "datePublished": "2026-06-25",
+    "dateModified": "2026-06-25"
+  }
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto flex justify-between items-center p-5">
+      <a href="../index.html" class="flex items-center gap-2">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC" class="h-10">
+        <span class="font-bold">Frohsinn</span>
+      </a>
+      <nav class="flex items-center gap-5 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-600">Guides</a>
+        <a href="../slashprompt.html" class="hover:text-blue-600 hidden sm:inline">SlashPrompt</a>
+        <a href="../chatport.html" class="hover:text-blue-600 hidden sm:inline">Chatport</a>
+        <a href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Add to Chrome — Free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-12">
+    <nav class="text-xs text-gray-400 mb-6"><a href="index.html" class="hover:text-blue-600">Guides</a> &rsaquo; Exporting AI conversations</nav>
+
+    <h1 class="text-4xl font-bold leading-tight mb-4">How to export a ChatGPT or Claude conversation to PDF, Markdown or HTML</h1>
+    <p class="text-gray-500 mb-8">Four methods compared — and how to get a clean export that keeps your code blocks, formatting and structure intact.</p>
+
+    <article class="prose-custom space-y-5 text-[17px] leading-relaxed text-gray-700">
+      <p>AI chats have quietly become working documents. A debugging session with Claude, a research thread in Perplexity, a draft you built with ChatGPT — these are things you want to keep, share with a teammate, paste into a doc, or file away for later. But none of the major AI tools give you a proper "export this conversation" button, so people resort to messy workarounds that lose formatting along the way.</p>
+      <p>Here are the four realistic ways to save a conversation, what each is good for, and where each one falls down.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">1. Copy and paste into a document</h2>
+      <p>The obvious move, and the lossiest. Selecting a long conversation in the browser and pasting it into Word or Google Docs tends to mangle the structure: code blocks lose their monospacing and indentation, lists flatten, and you often pull in stray UI text ("Copy", "Regenerate"). For a quick snippet it's fine. For anything with code or long structure, you'll spend more time cleaning up than you saved.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">2. Browser Print &rarr; Save as PDF</h2>
+      <p>Press <code class="bg-gray-100 px-1 rounded">Ctrl/Cmd&nbsp;+&nbsp;P</code> and choose "Save as PDF." This keeps more visual fidelity than copy-paste, but it prints the <em>page</em>, not the <em>conversation</em>: sidebars, headers, input boxes and message toolbars come along for the ride, long code blocks get cut off at the page margin, and you have no control over the output format. It's serviceable for a one-off record, awkward for anything you'll share.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">3. The built-in share link</h2>
+      <p>ChatGPT (and some others) can generate a public share link. That's useful for showing someone a chat, but it isn't a file you can archive, it lives on the provider's servers, it's public to anyone with the URL, and it doesn't exist at all on every platform. A link is not an export.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">4. A one-click export extension (the clean method)</h2>
+      <p>The approach that actually preserves the conversation is a purpose-built exporter that reads the chat structure directly and writes it to a real file. That's what we built <a href="../chatport.html" class="text-blue-700 underline">Chatport</a> for: a lean Chrome extension that exports your ChatGPT, Claude, Gemini or Perplexity conversation to <strong>Markdown, PDF or HTML</strong> in one click — with code blocks, headings and message roles intact, and none of the surrounding page clutter.</p>
+      <p>Like its sibling SlashPrompt, Chatport runs entirely in your browser. The conversation is read and converted locally; <strong>nothing is uploaded to any server</strong>, which matters when your chats contain code, client details or anything you'd rather not send to a third party.</p>
+
+      <div class="not-prose bg-blue-50 border border-blue-200 rounded-xl p-6 my-8">
+        <div class="flex items-center gap-2 mb-2">
+          <span style="display:inline-flex;width:28px;height:28px;border-radius:8px;background:linear-gradient(180deg,#2563eb,#5b8def);color:#fff;font-weight:800;align-items:center;justify-content:center">&#10515;</span>
+          <b class="text-lg">Chatport</b>
+          <span class="text-xs text-gray-500">· free Chrome extension</span>
+        </div>
+        <p class="text-sm text-gray-600 mb-4">Export any AI conversation to Markdown, PDF or HTML in one click. Works on ChatGPT, Claude, Gemini &amp; Perplexity. 100% local. Free tier; Pro is a one-time $14.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi" class="bg-blue-700 text-white px-5 py-2 rounded font-semibold hover:bg-blue-800 text-sm"><i class="fab fa-chrome mr-2"></i>Add to Chrome — Free</a>
+          <a href="../chatport.html" class="border border-blue-700 text-blue-700 px-5 py-2 rounded font-semibold hover:bg-blue-100 text-sm">See features &amp; Pro</a>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">Which format should you choose?</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Markdown</strong> — best for developers and note-takers. It drops straight into Obsidian, Notion, a GitHub README or a docs repo, and keeps code blocks as real code blocks. This is the format to pick if you'll edit the export later.</li>
+        <li><strong>PDF</strong> — best for sharing and archiving. A fixed, portable record you can email, attach to a ticket, or keep for compliance. Pick this when the export is final.</li>
+        <li><strong>HTML</strong> — best for a faithful, self-contained copy of the conversation that opens in any browser with the original look, links intact.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">Frequently asked questions</h2>
+      <p><strong>Will my code blocks survive the export?</strong> With copy-paste, usually not. With a structure-aware exporter like Chatport, yes — Markdown and HTML preserve code blocks exactly, and the PDF renders them in monospace.</p>
+      <p><strong>Is exporting my chats private?</strong> Only if the tool processes them locally. Chatport does the conversion in your browser and uploads nothing. Always check that an exporter isn't routing your conversations through its own servers.</p>
+      <p><strong>Can I export from Claude and Gemini too, not just ChatGPT?</strong> Yes — a good exporter is cross-platform. Chatport supports ChatGPT, Claude, Gemini and Perplexity from the same extension.</p>
+      <p><strong>Can I export a whole long conversation?</strong> Yes. Unlike a screenshot or a single-screen print, a proper exporter captures the entire thread, not just what's visible.</p>
+
+      <p class="pt-4">Bottom line: copy-paste and print-to-PDF will do in a pinch, but if you save conversations regularly — especially ones with code — a one-click, local exporter gets you a clean Markdown, PDF or HTML file without the cleanup.</p>
+    </article>
+
+    <div class="border-t border-gray-200 mt-12 pt-6 text-sm text-gray-500">
+      <p class="mb-2">Related guide: <a href="save-reuse-chatgpt-prompts.html" class="text-blue-700 underline">How to save and reuse your best ChatGPT prompts</a></p>
+      <p>&larr; <a href="index.html" class="text-blue-700 underline">All guides</a></p>
+    </div>
+  </main>
+
+  <footer class="bg-blue-900 text-white py-10 mt-12">
+    <div class="max-w-5xl mx-auto px-6 text-sm flex flex-wrap gap-4 justify-between">
+      <span>© 2026 Frohsinn LLC · <a href="../index.html" class="text-sky-400">frohsinnglobal.com</a></span>
+      <span><a href="../privacy.html" class="text-sky-400">Privacy</a> · <a href="../terms.html" class="text-sky-400">Terms</a> · <a href="mailto:mail@frohsinnglobal.com" class="text-sky-400">Support</a></span>
+    </div>
+  </footer>
+</body>
+</html>
