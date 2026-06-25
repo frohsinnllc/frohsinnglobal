@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your SlashPrompt Pro license</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <div class="max-w-xl mx-auto px-6 py-16">
+    <div class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="text-center mb-6">
+        <span style="display:inline-flex;width:44px;height:44px;border-radius:11px;background:linear-gradient(180deg,#ff7a45,#ffb088);color:#1a1102;font-weight:800;align-items:center;justify-content:center;font-size:28px">/</span>
+        <h1 class="text-2xl font-bold mt-3">Thank you! 🎉</h1>
+        <p class="text-gray-600">Here’s your SlashPrompt Pro license key.</p>
+      </div>
+
+      <div id="loading" class="text-center text-gray-500 py-6">Generating your license…</div>
+
+      <div id="result" class="hidden">
+        <label class="block text-xs uppercase tracking-wide text-gray-500 mb-1">Your license key</label>
+        <div class="flex gap-2">
+          <input id="key" readonly class="flex-1 font-mono text-sm bg-gray-100 border border-gray-300 rounded-lg px-3 py-2" />
+          <button id="copy" class="bg-blue-700 text-white px-4 rounded-lg font-semibold">Copy</button>
+        </div>
+        <div class="mt-6 text-sm text-gray-700 space-y-2">
+          <p class="font-semibold">Activate in 20 seconds:</p>
+          <ol class="list-decimal list-inside space-y-1 text-gray-600">
+            <li>Click the SlashPrompt icon in Chrome → <b>⚙ Settings</b> (or right-click → Options).</li>
+            <li>Paste the key into <b>License</b> and hit <b>Activate</b>.</li>
+            <li>Pro features unlock instantly — unlimited prompts, variables, folders, backup.</li>
+          </ol>
+          <p class="text-gray-500 text-xs mt-3">Keep this key — we also recommend saving it. Lost it? Email <a href="mailto:mail@frohsinnglobal.com" class="text-blue-700">mail@frohsinnglobal.com</a> with your purchase email.</p>
+        </div>
+      </div>
+
+      <div id="error" class="hidden text-center py-4">
+        <p class="text-gray-700">We couldn’t auto-generate your key.</p>
+        <p class="text-gray-500 text-sm mt-2">Your payment is safe. Email <a href="mailto:mail@frohsinnglobal.com" class="text-blue-700">mail@frohsinnglobal.com</a> and we’ll send your license right away.</p>
+      </div>
+    </div>
+    <p class="text-center text-xs text-gray-400 mt-4">SlashPrompt · Frohsinn LLC · <a href="slashprompt.html" class="underline">back to site</a></p>
+  </div>
+
+  <script>
+    const WORKER = '__WORKER_URL__';
+    const sid = new URLSearchParams(location.search).get('session_id');
+    const $ = (id) => document.getElementById(id);
+    function show(which) { ['loading','result','error'].forEach((s) => $(s).classList.toggle('hidden', s !== which)); }
+
+    async function run() {
+      if (!sid || WORKER.indexOf('__') === 0) { show('error'); return; }
+      try {
+        const r = await fetch(`${WORKER}/license?session_id=${encodeURIComponent(sid)}`);
+        const data = await r.json();
+        if (r.ok && data.key) {
+          $('key').value = data.key;
+          show('result');
+        } else { show('error'); }
+      } catch (_) { show('error'); }
+    }
+    $('copy').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText($('key').value); $('copy').textContent = 'Copied'; setTimeout(() => ($('copy').textContent = 'Copy'), 1200); } catch (_) {}
+    });
+    run();
+  </script>
+</body>
+</html>
