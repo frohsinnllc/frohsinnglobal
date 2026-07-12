@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URBN TRVL · Tokyo 2026 Growth Plan</title>
+<style>
+  :root{
+    --bg:#0e0e12; --bg2:#15141a; --card:#1a1920; --line:#2b2a33; --line2:#4a4433;
+    --gold:#c9a24b; --gold2:#e6c877; --text:#f4efe6; --muted:#8f897c; --dim:#5f5a50;
+    --serif:"Georgia","Times New Roman",serif;
+    --sans:-apple-system,"SF Pro Display","Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--sans);overflow:hidden}
+  .deck{height:100%;position:relative}
+  .slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;
+    padding:6vh 7vw;background:radial-gradient(1200px 800px at 80% -10%,#1c1913 0%,transparent 60%),var(--bg)}
+  .slide.active{display:flex;animation:fade .5s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .eyebrow{color:var(--gold2);font-size:clamp(11px,1.1vw,14px);letter-spacing:.35em;text-transform:uppercase;font-weight:600;margin-bottom:2.2vh}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(34px,5.2vw,74px);line-height:1.05;letter-spacing:-.01em}
+  h1 em{color:var(--gold2);font-style:italic}
+  .sub{color:var(--muted);font-size:clamp(14px,1.4vw,19px);line-height:1.55;margin-top:2.4vh;max-width:62ch}
+  .grid{display:grid;gap:clamp(10px,1.4vw,22px);margin-top:4.5vh}
+  .cols2{grid-template-columns:1fr 1fr}.cols3{grid-template-columns:repeat(3,1fr)}.cols4{grid-template-columns:repeat(4,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(14px,1.8vw,26px)}
+  .card.hot{border-color:var(--line2);background:linear-gradient(160deg,#211d13,#1a1920 70%)}
+  .big{font-family:var(--serif);font-size:clamp(26px,3.4vw,52px);color:var(--gold2)}
+  .lbl{color:var(--muted);font-size:clamp(11px,1vw,14px);margin-top:.5vh;line-height:1.45}
+  .k{color:var(--text);font-weight:600;font-size:clamp(13px,1.2vw,17px)}
+  .pt{display:flex;gap:14px;align-items:flex-start;margin-top:1.6vh}
+  .pt .n{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#181510;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+  .pt p{color:var(--muted);font-size:clamp(13px,1.25vw,17px);line-height:1.5}
+  .pt p b{color:var(--text)}
+  .foot{position:absolute;bottom:3.2vh;left:7vw;right:7vw;display:flex;justify-content:space-between;
+    color:var(--dim);font-size:12px;letter-spacing:.15em;text-transform:uppercase}
+  .dots{position:absolute;bottom:3vh;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5}
+  .dot{width:7px;height:7px;border-radius:50%;background:#3a3942;cursor:pointer;transition:.2s}
+  .dot.on{background:var(--gold2);transform:scale(1.3)}
+  .nav-hint{position:fixed;top:3vh;right:7vw;color:var(--dim);font-size:12px;letter-spacing:.1em}
+  svg{max-width:100%;height:auto;display:block}
+  .svgwrap{margin-top:3.5vh}
+  table.mini{width:100%;border-collapse:collapse;margin-top:1.5vh}
+  table.mini td,table.mini th{padding:.9vh .6vw;font-size:clamp(12px,1.15vw,16px);text-align:left;border-bottom:1px solid var(--line)}
+  table.mini th{color:var(--gold2);font-weight:600;letter-spacing:.05em}
+  table.mini td{color:var(--muted)} table.mini td.g{color:var(--gold2);font-weight:700} table.mini td.w{color:var(--text)}
+  .tag{display:inline-block;border:1px solid var(--line2);color:var(--gold2);border-radius:100px;
+    padding:.4em 1em;font-size:clamp(11px,1vw,13px);letter-spacing:.08em;margin:.3em .3em 0 0}
+  @media (max-width:820px){.cols2,.cols3,.cols4{grid-template-columns:1fr 1fr}.slide{overflow-y:auto;justify-content:flex-start;padding-top:9vh}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- 1 · CURRENT SITUATION -->
+<section class="slide active">
+  <div class="eyebrow">URBN TRVL · Growth Plan · 01 — Current Situation</div>
+  <h1>Tokyo is <em>live.</em><br>The funnel isn't — yet.</h1>
+  <div class="grid cols4">
+    <div class="card"><div class="big">Nov 8–15</div><div class="lbl">Japan Nights · 8 days, peak autumn</div></div>
+    <div class="card"><div class="big">$3,399</div><div class="lbl">per person double · $499 deposit · 4 payments</div></div>
+    <div class="card hot"><div class="big">2 + 2</div><div class="lbl">booked & paid (one couple) + two expected</div></div>
+    <div class="card"><div class="big">122</div><div class="lbl">days to departure — every week matters</div></div>
+  </div>
+  <p class="sub">The product is strong: real luxury itinerary, competitive price, 8 years of trips on 4 continents.
+  What's missing is the machine that turns attention into deposits.</p>
+</section>
+
+<!-- 2 · OPPORTUNITY -->
+<section class="slide">
+  <div class="eyebrow">02 — The Opportunity</div>
+  <h1>Not a demand problem.<br>A <em>trust &amp; urgency</em> problem.</h1>
+  <div class="grid cols3">
+    <div class="card"><div class="k">🧾 Checkout says</div><div class="lbl">"Send via PayPal to urbntrvl2015@gmail.com" — on a $3,399 luxury product. Fixable in days.</div></div>
+    <div class="card"><div class="k">⭐ Newest review shown</div><div class="lbl">2018 — while Medellín '24 travelers and 8 years of alumni are one message away. And two never-run 2026 trips still sit on the site — take them down first.</div></div>
+    <div class="card"><div class="k">⏳ Urgency on the page</div><div class="lbl">None. Yet a real deadline exists: the 4-payment plan closes soon. Say it.</div></div>
+  </div>
+  <div class="card hot" style="margin-top:2.5vh"><div class="k">Proof the demand exists</div>
+  <div class="lbl">Competitors' Tokyo group trips (20 spots) sell out · Japan is 2026's flex destination ·
+  URBN's own price beats comparable luxury offers. Same traffic, trust fixed ⇒ credibly 2–4× more deposits.</div></div>
+</section>
+
+<!-- 3 · TARGET AUDIENCE -->
+<section class="slide">
+  <div class="eyebrow">03 — Who We're Talking To</div>
+  <h1>Three faces, <em>one</em> desire:<br>Japan without the homework.</h1>
+  <div class="grid cols3">
+    <div class="card"><div class="big" style="font-size:clamp(20px,2vw,30px)">Maya · 33</div>
+      <div class="lbl"><b class="k">The Squad Organizer.</b> ATL program manager. Four friends say "I'm down," zero deposits. Wants the trip to happen without being the unpaid travel agent.<br><br><span style="color:var(--gold2)">Worth 3–5 seats, not 1.</span></div></div>
+    <div class="card"><div class="big" style="font-size:clamp(20px,2vw,30px)">Jordan · 29</div>
+      <div class="lbl"><b class="k">The Solo Joiner.</b> DC engineer. Japan's been on the list 3 years; solo felt lonely and hard. Needs proof solo people thrive + roommate matching for double-occupancy pricing.</div></div>
+    <div class="card"><div class="big" style="font-size:clamp(20px,2vw,30px)">D&amp;M · 38/41</div>
+      <div class="lbl"><b class="k">The Milestone Couple.</b> 10-year anniversary. Done with all-inclusives; wants a real story, effortlessly. The first booking IS a couple — tell their story.</div></div>
+  </div>
+  <p class="sub">Black American professionals, 28–42, $85k+, urban metros. They can afford Japan alone —
+  they pay URBN for zero planning, curated access, and a group that moves like they do.</p>
+</section>
+
+<!-- 4 · WHY TOKYO -->
+<section class="slide">
+  <div class="eyebrow">04 — Why This Trip Beats DIY</div>
+  <h1>Same money.<br><em>None</em> of the homework.</h1>
+  <div class="grid cols2">
+    <div class="card">
+      <table class="mini">
+        <tr><th>Do-it-yourself Tokyo</th><th></th></tr>
+        <tr><td>Luxury hotel · transfers · fine dining · experiences</td><td class="w">$3,100–$4,450</td></tr>
+        <tr><td>Planning &amp; reservations (many need Japanese)</td><td class="w">30–50 hours</td></tr>
+        <tr><td>Members-only lounges &amp; hidden counters</td><td class="w">not bookable</td></tr>
+        <tr><td>Your people at the table</td><td class="w">—</td></tr>
+      </table>
+    </div>
+    <div class="card hot">
+      <table class="mini">
+        <tr><th>Japan Nights</th><th></th></tr>
+        <tr><td>All of it, engineered &amp; hosted</td><td class="g">$3,399</td></tr>
+        <tr><td>Your planning time</td><td class="g">0 hours</td></tr>
+        <tr><td>The rooms you can't Google</td><td class="g">included</td></tr>
+        <tr><td>Family energy, night one</td><td class="g">included</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="sub">Plus the calendar cheat code: Nov 8–15 spans two weekends — <b style="color:var(--gold2)">five PTO days</b> —
+  in peak autumn foliage, after the crowds. <em>"Tokyo, elevated. Are you coming, or nah?"</em></p>
+</section>
+
+<!-- 5 · MARKETING STRATEGY -->
+<section class="slide">
+  <div class="eyebrow">05 — The Strategy</div>
+  <h1>Five moves, <em>in order.</em></h1>
+  <div style="margin-top:3vh">
+    <div class="pt"><div class="n">1</div><p><b>Fix trust first.</b> Never-run Barbados/Portugal listings off the site · real checkout with auto-installments · fresh reviews (harvest Medellín '24 alumni now) · 60-second founder video. Nothing else works before this.</p></div>
+    <div class="pt"><div class="n">2</div><p><b>Turn on honest urgency.</b> Seats-left counter + the payment-plan deadline that already exists — publish it, count down to it.</p></div>
+    <div class="pt"><div class="n">3</div><p><b>Build the middle of the funnel.</b> Itinerary PDF → 5-email nurture → "talk to a host." A $3,399 decision needs a middle step.</p></div>
+    <div class="pt"><div class="n">4</div><p><b>Feed the machine on a system.</b> 8-week content arc, one 2-hour batch session/week, one idea → eight surfaces (IG→TikTok→Shorts→FB→Pinterest→blog→email).</p></div>
+    <div class="pt"><div class="n">5</div><p><b>Alumni first.</b> Early access + give-$150/get-$150 referral to every past traveler. Warmest 2–4 seats, week one. Target: 30% of bookings via referral.</p></div>
+  </div>
+</section>
+
+<!-- 6 · CUSTOMER JOURNEY -->
+<section class="slide">
+  <div class="eyebrow">06 — Customer Journey</div>
+  <h1>From reel to <em>referral.</em></h1>
+  <div class="svgwrap">
+  <svg viewBox="0 0 1100 300" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c9a24b"/><stop offset="1" stop-color="#e6c877"/></linearGradient>
+      <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c9a24b"/></marker>
+    </defs>
+    <g font-size="16" font-weight="600" text-anchor="middle">
+      <rect x="10" y="60" width="180" height="72" rx="14" fill="#1a1920" stroke="#2b2a33"/>
+      <text x="100" y="92" fill="#f4efe6">Reel / TikTok</text><text x="100" y="114" fill="#8f897c" font-size="12" font-weight="400">+ alumni referrals</text>
+      <rect x="240" y="60" width="180" height="72" rx="14" fill="#1a1920" stroke="#2b2a33"/>
+      <text x="330" y="92" fill="#f4efe6">Tokyo page</text><text x="330" y="114" fill="#8f897c" font-size="12" font-weight="400">price · seats · deadline</text>
+      <rect x="470" y="60" width="180" height="72" rx="14" fill="#1a1920" stroke="#2b2a33"/>
+      <text x="560" y="92" fill="#f4efe6">Email capture</text><text x="560" y="114" fill="#8f897c" font-size="12" font-weight="400">itinerary PDF · nurture</text>
+      <rect x="700" y="60" width="180" height="72" rx="14" fill="#1a1920" stroke="#2b2a33"/>
+      <text x="790" y="92" fill="#f4efe6">Trust</text><text x="790" y="114" fill="#8f897c" font-size="12" font-weight="400">reviews · founder · host call</text>
+      <rect x="930" y="54" width="160" height="84" rx="14" fill="url(#g1)"/>
+      <text x="1010" y="92" fill="#181510">BOOK</text><text x="1010" y="114" fill="#4a3d1f" font-size="12" font-weight="500">$499 deposit</text>
+      <rect x="700" y="210" width="180" height="66" rx="14" fill="#1a1920" stroke="#4a4433"/>
+      <text x="790" y="238" fill="#f4efe6">Pre-trip hype</text><text x="790" y="258" fill="#8f897c" font-size="12" font-weight="400">shareable countdowns</text>
+      <rect x="470" y="210" width="180" height="66" rx="14" fill="#1a1920" stroke="#4a4433"/>
+      <text x="560" y="238" fill="#e6c877">THE TRIP</text><text x="560" y="258" fill="#8f897c" font-size="12" font-weight="400">+ content capture</text>
+      <rect x="240" y="210" width="180" height="66" rx="14" fill="#1a1920" stroke="#4a4433"/>
+      <text x="330" y="238" fill="#f4efe6">Review + referral</text><text x="330" y="258" fill="#8f897c" font-size="12" font-weight="400">feeds the next trip</text>
+    </g>
+    <g stroke="#c9a24b" stroke-width="2" fill="none">
+      <line x1="190" y1="96" x2="233" y2="96" marker-end="url(#a1)"/>
+      <line x1="420" y1="96" x2="463" y2="96" marker-end="url(#a1)"/>
+      <line x1="650" y1="96" x2="693" y2="96" marker-end="url(#a1)"/>
+      <line x1="880" y1="96" x2="923" y2="96" marker-end="url(#a1)"/>
+      <path d="M1010 138 C1010 190 940 243 887 243" marker-end="url(#a1)"/>
+      <line x1="700" y1="243" x2="657" y2="243" marker-end="url(#a1)"/>
+      <line x1="470" y1="243" x2="427" y2="243" marker-end="url(#a1)"/>
+    </g>
+    <path d="M240 243 C120 243 100 150 130 136" stroke="#e6c877" stroke-width="2.6" fill="none" marker-end="url(#a1)"/>
+    <text x="118" y="196" fill="#e6c877" font-size="12" font-weight="700" text-anchor="middle">THE LOOP</text>
+  </svg>
+  </div>
+  <p class="sub">Hot leads book straight from the page; everyone else gets a middle path. And the loop is the point —
+  every trip manufactures the reviews, footage and referrals that sell the next one.</p>
+</section>
+
+<!-- 7 · CONTENT PLAN -->
+<section class="slide">
+  <div class="eyebrow">07 — Content Plan</div>
+  <h1>Eight weeks. One arc.<br><em>Two hours</em> of filming a week.</h1>
+  <div class="svgwrap">
+  <svg viewBox="0 0 1100 150" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+    <g font-size="13" text-anchor="middle">
+      <!-- timeline -->
+      <line x1="30" y1="60" x2="1070" y2="60" stroke="#2b2a33" stroke-width="2"/>
+      <g fill="#e6c877">
+        <circle cx="90" cy="60" r="7"/><circle cx="225" cy="60" r="7"/><circle cx="360" cy="60" r="7"/><circle cx="495" cy="60" r="7"/>
+        <circle cx="630" cy="60" r="7"/><circle cx="765" cy="60" r="7"/><circle cx="900" cy="60" r="7"/><circle cx="1035" cy="60" r="7"/>
+      </g>
+      <g fill="#f4efe6" font-weight="600">
+        <text x="90" y="35">Harvest</text><text x="225" y="35">The Drop</text><text x="360" y="35">Access</text><text x="495" y="35">Community</text>
+        <text x="630" y="35">Food</text><text x="765" y="35">Trust</text><text x="900" y="35">Urgency</text><text x="1035" y="35">Last Call</text>
+      </g>
+      <g fill="#8f897c" font-size="11">
+        <text x="90" y="92">alumni receipts</text><text x="225" y="92">Tokyo announce</text><text x="360" y="92">"can't Google"</text><text x="495" y="92">solo-joiners</text>
+        <text x="630" y="92">omakase week</text><text x="765" y="92">reviews · FAQ</text><text x="900" y="92">seats + PTO math</text><text x="1035" y="92">plan deadline</text>
+      </g>
+      <g fill="#5f5a50" font-size="11">
+        <text x="90" y="120">Jul 13</text><text x="1035" y="120">Sep 6</text>
+      </g>
+    </g>
+  </svg>
+  </div>
+  <div class="grid cols3" style="margin-top:1vh">
+    <div class="card"><div class="k">Weekly mix · 3-2-1-1</div><div class="lbl">3 Reels · 2 story arcs · 1 carousel · 1 community post — batched in one session</div></div>
+    <div class="card"><div class="k">One idea, eight surfaces</div><div class="lbl">IG Reel → TikTok → YT Short → FB → Pinterest → carousel → blog → email</div></div>
+    <div class="card"><div class="k">DMs are the sales floor</div><div class="lbl">30 min/day: every poll-tap and commenter gets a human reply → trip link</div></div>
+  </div>
+</section>
+
+<!-- 8 · WEBSITE IMPROVEMENTS -->
+<section class="slide">
+  <div class="eyebrow">08 — Website Improvements <span style="color:var(--dim)">(proposed — nothing touched)</span></div>
+  <h1>Make the site worthy<br>of the <em>trip.</em></h1>
+  <div class="grid cols2">
+    <div class="card hot"><div class="k">P0 · This week</div>
+      <div class="lbl">⓪ Barbados &amp; Portugal '26 off the site (never ran — 10 min)<br>① Real checkout w/ auto-installments (retire PayPal-to-gmail) — est. <b style="color:var(--gold2)">1.5–3×</b> checkout completion<br>
+      ② Seats-left + payment-plan deadline on the page<br>③ Fresh alumni reviews, embedded next to the buy button</div></div>
+    <div class="card"><div class="k">P1 · Within 2 weeks</div>
+      <div class="lbl">④ Price &amp; dates above the fold + DIY-math table + FAQ + "talk to a host"<br>
+      ⑤ Itinerary-PDF email capture<br>⑥ Homepage hero → Tokyo</div></div>
+    <div class="card"><div class="k">P2 · Within 30 days</div>
+      <div class="lbl">⑦ Business-name payments, T&amp;Cs at checkout<br>⑧ Rio/Cartagena teaser pages + early lists<br>⑨ Analytics events + pixels ⑩ founder video on page</div></div>
+    <div class="card"><div class="k">Deliberately NOT now</div>
+      <div class="lbl">✗ Re-platform / redesign (the premium mockup waits until after Tokyo)<br>✗ Paid ads before P0 lands<br>✗ Custom-built booking software</div></div>
+  </div>
+</section>
+
+<!-- 9 · 30-DAY ROADMAP -->
+<section class="slide">
+  <div class="eyebrow">09 — 30-Day Roadmap · Jul 13 → Aug 9</div>
+  <h1>Trust → Drop → Human → <em>Deadline.</em></h1>
+  <div class="grid cols4">
+    <div class="card hot"><div class="big" style="font-size:clamp(18px,1.8vw,26px)">Wk 1 · Fix</div>
+      <div class="lbl">Verify facts (capacity!) · stale trips off the site · real checkout live · alumni review harvest · <b>alumni early-access email</b></div></div>
+    <div class="card"><div class="big" style="font-size:clamp(18px,1.8vw,26px)">Wk 2 · Drop</div>
+      <div class="lbl">Tokyo announce moment · itinerary PDF + capture forms · welcome + interest sequences on · reviews refreshed</div></div>
+    <div class="card"><div class="big" style="font-size:clamp(18px,1.8vw,26px)">Wk 3 · Trust</div>
+      <div class="lbl">Founder video · "talk to a host" · the-math content week · booked-couple story · abandon emails</div></div>
+    <div class="card"><div class="big" style="font-size:clamp(18px,1.8vw,26px)">Wk 4 · Push</div>
+      <div class="lbl">First TRUE deadline event · solo-joiner week · pre-trip sequence · KPI review → steer weeks 5–8</div></div>
+  </div>
+  <div class="card" style="margin-top:2.5vh"><div class="k">The math to sold out</div>
+    <div class="lbl">50k organic reach → 3% → 1,500 page visits → 8% → 120 leads → 10% → <b style="color:var(--gold2)">12 deposits ≈ sold out by Oct 1 (~$40k+)</b>.
+    Founder time: ~15h/wk weeks 1–2, then ~8h/wk. No paid ads. No new hires. &lt;$100/mo tools.</div></div>
+</section>
+
+<!-- 10 · NEXT STEPS -->
+<section class="slide">
+  <div class="eyebrow">10 — Next Steps</div>
+  <h1>Four decisions,<br>then we <em>run.</em></h1>
+  <div style="margin-top:3vh">
+    <div class="pt"><div class="n">1</div><p><b>Confirm the facts:</b> true capacity, seats sold, exact payment-plan cutoff, hotel name. (All urgency copy hangs on this.)</p></div>
+    <div class="pt"><div class="n">2</div><p><b>Pick the checkout tool</b> — recommendation: WeTravel or SquadTrip — and retire manual PayPal this week.</p></div>
+    <div class="pt"><div class="n">3</div><p><b>Approve the referral offer</b> (proposal: give $150 / get $150) + the alumni early-access email.</p></div>
+    <div class="pt"><div class="n">4</div><p><b>30 minutes on camera:</b> the founder video + the booked couple's blessing to tell their story.</p></div>
+  </div>
+  <div style="margin-top:4vh"><span class="tag">Everything reusable for Rio · Cartagena &amp; every future trip</span>
+  <span class="tag">Full docs: marketing/campaigns/tokyo-2026/</span></div>
+  <p class="sub" style="font-family:var(--serif);font-style:italic;font-size:clamp(18px,2vw,26px);color:var(--gold2);margin-top:3vh">Are you coming, or nah?</p>
+</section>
+
+</div>
+<div class="dots" id="dots"></div>
+<div class="nav-hint">← → · click · swipe</div>
+<div class="foot"><span>URBN TRVL — Tokyo 2026</span><span>Growth System · Pilot Campaign</span></div>
+<script>
+  const slides=[...document.querySelectorAll('.slide')];const dots=document.getElementById('dots');let i=0;
+  slides.forEach((_,k)=>{const d=document.createElement('div');d.className='dot'+(k===0?' on':'');d.onclick=e=>{e.stopPropagation();go(k)};dots.appendChild(d)});
+  function go(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    [...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i))}
+  addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}
+    if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}
+    if(e.key==='Home')go(0);if(e.key==='End')go(slides.length-1)});
+  addEventListener('click',e=>{if(e.clientX>innerWidth*0.5)go(i+1);else go(i-1)});
+  let tx=null;addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+  addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;
+    if(Math.abs(dx)>50)go(i+(dx<0?1:-1));tx=null});
+</script>
+</body>
+</html>
