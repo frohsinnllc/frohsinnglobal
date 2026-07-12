@@ -10,4 +10,10 @@
   <url><loc>https://frohsinnglobal.com/blog/</loc></url>
   <url><loc>https://frohsinnglobal.com/blog/save-reuse-chatgpt-prompts.html</loc></url>
   <url><loc>https://frohsinnglobal.com/blog/export-chatgpt-conversation-pdf-markdown.html</loc></url>
+
+  <url>
+    <loc>https://frohsinnglobal.com/quick-fix.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

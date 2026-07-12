@@ -1,0 +1,70 @@
+:root {
+  --bg: #0b1020;
+  --panel: #111827;
+  --panel-2: #172033;
+  --text: #f9fafb;
+  --muted: #cbd5e1;
+  --soft: #94a3b8;
+  --line: rgba(255,255,255,.12);
+  --accent: #7dd3fc;
+  --accent-2: #a7f3d0;
+  --danger-soft: #fecaca;
+  --shadow: 0 24px 80px rgba(0,0,0,.35);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: inherit; }
+.hero {
+  min-height: 86vh;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(125,211,252,.24), transparent 30%),
+    radial-gradient(circle at 80% 5%, rgba(167,243,208,.18), transparent 26%),
+    linear-gradient(135deg, #080d1c 0%, #111827 55%, #0b1020 100%);
+}
+.nav { max-width: 1120px; margin: 0 auto 72px; display: flex; align-items: center; gap: 22px; }
+.nav a { text-decoration: none; color: var(--muted); font-size: 15px; }
+.nav .brand { margin-right: auto; color: var(--text); font-weight: 800; letter-spacing: -.02em; }
+.nav-cta { border: 1px solid var(--line); padding: 10px 14px; border-radius: 999px; }
+.hero-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(300px, .8fr); gap: 48px; align-items: center; }
+.eyebrow { color: var(--accent-2); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 800; margin: 0 0 14px; }
+h1, h2, h3 { line-height: 1.05; letter-spacing: -.04em; margin: 0; }
+h1 { font-size: clamp(44px, 7vw, 84px); max-width: 830px; }
+h2 { font-size: clamp(30px, 4vw, 52px); }
+h3 { font-size: 22px; }
+.lead { color: var(--muted); font-size: clamp(18px, 2vw, 23px); max-width: 720px; margin: 26px 0; }
+.cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin: 32px 0 12px; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 20px; border-radius: 999px; text-decoration: none; font-weight: 800; }
+.primary { color: #062312; background: linear-gradient(135deg, var(--accent-2), var(--accent)); }
+.secondary { border: 1px solid var(--line); color: var(--text); background: rgba(255,255,255,.04); }
+.microcopy, .small { color: var(--soft); font-size: 14px; }
+.card { background: rgba(17,24,39,.78); border: 1px solid var(--line); border-radius: 28px; padding: 28px; box-shadow: var(--shadow); }
+.hero-card { backdrop-filter: blur(14px); }
+.badge { display: inline-flex; color: #062312; background: var(--accent-2); border-radius: 999px; padding: 6px 12px; font-weight: 800; font-size: 13px; }
+.checklist, .xlist { padding: 0; margin: 22px 0; list-style: none; }
+.checklist li, .xlist li { margin: 12px 0; padding-left: 28px; position: relative; color: var(--muted); }
+.checklist li::before { content: "✓"; color: var(--accent-2); position: absolute; left: 0; font-weight: 900; }
+.xlist li::before { content: "–"; color: var(--danger-soft); position: absolute; left: 0; font-weight: 900; }
+.price { font-size: 42px; font-weight: 900; letter-spacing: -.04em; margin: 24px 0 0; }
+.section { max-width: 1120px; margin: 0 auto; padding: 88px 24px; }
+.section-heading { max-width: 760px; margin-bottom: 34px; }
+.grid.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card p { color: var(--muted); }
+.split { display: grid; grid-template-columns: 1.1fr .95fr .95fr; gap: 22px; align-items: start; }
+.muted { background: rgba(23,32,51,.65); }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.step { border-top: 1px solid var(--line); padding-top: 22px; }
+.step span { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 999px; background: rgba(125,211,252,.14); color: var(--accent); font-weight: 900; margin-bottom: 18px; }
+.step p { color: var(--muted); }
+.price-section { padding-top: 32px; }
+.price-card { text-align: center; max-width: 720px; margin: 0 auto; background: linear-gradient(135deg, rgba(125,211,252,.16), rgba(167,243,208,.10)); }
+.price-card p { max-width: 560px; margin-left: auto; margin-right: auto; }
+.footer { border-top: 1px solid var(--line); max-width: 1120px; margin: 40px auto 0; padding: 28px 24px 52px; color: var(--soft); display: flex; justify-content: space-between; gap: 24px; }
+.footer a { color: var(--muted); }
+@media (max-width: 900px) {
+  .hero-grid, .grid.three, .split, .steps { grid-template-columns: 1fr; }
+  .nav { margin-bottom: 44px; }
+  .nav a:not(.brand):not(.nav-cta) { display: none; }
+  .footer { flex-direction: column; }
+}
