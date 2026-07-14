@@ -4,195 +4,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frohsinn LLC – International Digital Solutions</title>
+  <meta name="description" content="Frohsinn LLC is a US-registered company creating digital business models, automated platforms, and scalable systems for international markets.">
   <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
 </head>
 
-<body class="font-sans text-gray-800">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
-      <a href="#"><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC" class="h-16"></a>
-      <nav class="hidden md:flex space-x-8 font-medium">
-        <a href="#products" class="hover:text-blue-600">Products</a>
-        <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="blog/" class="hover:text-blue-600">Guides</a>
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="contact.html" class="hover:text-blue-600">Contact</a>
-        <a href="quick-fix.html" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">48h Quick Fix</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Frohsinn LLC — home">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M2 5.5h18M2 11h18M2 16.5h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M4.5 4.5l13 13m0-13l-13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="blog/">Guides</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary" href="quick-fix.html">48h Quick Fix</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative bg-blue-900 text-white min-h-screen flex items-center">
-    <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/b21c9d8d-7f3a-40ee-22e9-7d9c267a2d00/publicContain" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-40">
-    <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 p-8">
-      <div class="space-y-6">
-        <h1 class="text-5xl font-bold leading-tight">
-          Transforming <span class="text-sky-400">Creative Ideas</span> into <span class="text-sky-400">Global Success</span>
-        </h1>
-        <p class="text-lg opacity-90">
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero on-dark">
+      <div class="container">
+        <h1>Transforming <em>Creative Ideas</em> into <em>Global Success</em></h1>
+        <p class="lede">
           Frohsinn LLC is a US-registered company creating innovative digital business models, automated platforms, and scalable systems for international markets.
         </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="quick-fix.html" class="bg-sky-400 text-black px-6 py-3 rounded font-semibold hover:bg-orange-400">Book the 48h Quick Fix</a>
-          <a href="#services" class="border border-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-blue-900">Explore Services</a>
+        <div class="cta-row">
+          <a class="btn btn-light" href="quick-fix.html">Book the 48h Quick Fix</a>
+          <a class="btn btn-outline" href="#services">Explore Services</a>
         </div>
-        <p class="text-sm opacity-80">Sprint offer: one manual workflow mapped, simplified, and handed over with a runbook for 599 EUR.</p>
+        <p class="sprint-note"><strong>Sprint offer:</strong> one manual workflow mapped, simplified, and handed over with a runbook for 599 EUR.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Products -->
-  <section id="products" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto text-center mb-12 px-6">
-      <h2 class="text-4xl font-bold mb-4">Our Products</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Tools and offers we build and use ourselves.
-      </p>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-6">
-      <!-- Card 1: Operator Kit -->
-      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition flex flex-col h-full">
-        <span class="inline-block text-xs tracking-widest uppercase text-blue-700 border border-blue-700/30 rounded-full px-3 py-1 mb-3 self-start">Product</span>
-        <h3 class="text-lg font-bold mb-2">Claude Code Operator Kit</h3>
-        <p class="text-sm text-gray-600 mb-4 flex-1">The curated setup that makes AI coding agents productive on day one — tuned settings, original skills, a CLAUDE.md template, and the Operator's Playbook.</p>
-        <a href="operator-kit.html" class="mt-auto text-sm bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800 text-center">Explore the Kit →</a>
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Products</h2>
+          <p>Tools and offers we build and use ourselves.</p>
+        </div>
+
+        <ul class="product-list">
+          <li class="product-row">
+            <div class="product-name">
+              <h3>Claude Code Operator Kit</h3>
+              <span class="product-tag">Product</span>
+            </div>
+            <p class="product-desc">The curated setup that makes AI coding agents productive on day one — tuned settings, original skills, a CLAUDE.md template, and the Operator's Playbook.</p>
+            <div class="product-actions">
+              <a class="btn btn-primary" href="operator-kit.html">Explore the Kit</a>
+            </div>
+          </li>
+
+          <li class="product-row">
+            <div class="product-name">
+              <h3>SlashPrompt</h3>
+              <span class="product-tag">Free + Pro</span>
+            </div>
+            <p class="product-desc">Save your AI prompts and insert them with “/” in ChatGPT, Claude, Gemini &amp; Perplexity. Variable templates, folders, 100% local.</p>
+            <div class="product-actions">
+              <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/ammilpadgcgeecapppnofpanloepngca">Add to Chrome — Free</a>
+              <a class="link-secondary" href="slashprompt.html">Details &amp; Pro</a>
+            </div>
+          </li>
+
+          <li class="product-row">
+            <div class="product-name">
+              <h3>Chatport</h3>
+              <span class="product-tag">Free + Pro</span>
+            </div>
+            <p class="product-desc">Export your AI conversations to Markdown, PDF or HTML in one click. Works on ChatGPT, Claude, Gemini &amp; Perplexity. Nothing leaves your browser.</p>
+            <div class="product-actions">
+              <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi">Add to Chrome — Free</a>
+              <a class="link-secondary" href="chatport.html">Details &amp; Pro</a>
+            </div>
+          </li>
+
+          <li class="product-row">
+            <div class="product-name">
+              <h3>48h Automation Quick Fix</h3>
+              <span class="product-tag">Sprint · 599 EUR</span>
+            </div>
+            <p class="product-desc">One manual workflow mapped, simplified, and handed over with a runbook — fixed price, no retainer.</p>
+            <div class="product-actions">
+              <a class="btn btn-primary" href="quick-fix.html">Book the Quick Fix</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <!-- Card 2: SlashPrompt -->
-      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition flex flex-col h-full">
-        <span class="inline-block text-xs tracking-widest uppercase text-blue-700 border border-blue-700/30 rounded-full px-3 py-1 mb-3 self-start">Free + Pro</span>
-        <h3 class="text-lg font-bold mb-2">SlashPrompt</h3>
-        <p class="text-sm text-gray-600 mb-4 flex-1">Save your AI prompts and insert them with "/" in ChatGPT, Claude, Gemini &amp; Perplexity. Variable templates, folders, 100% local.</p>
-        <div class="mt-auto flex flex-wrap gap-2">
-          <a href="https://chromewebstore.google.com/detail/ammilpadgcgeecapppnofpanloepngca" class="text-sm bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800">Add to Chrome — Free</a>
-          <a href="slashprompt.html" class="text-sm border border-blue-700 text-blue-700 px-4 py-2 rounded font-semibold hover:bg-blue-50">Details &amp; Pro</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Services</h2>
+          <p>Frohsinn LLC develops international digital solutions with a focus on scalability, compliance, and automation. We provide structured frameworks designed for global business operations.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service">
+            <h3>Digital Business Models</h3>
+            <p class="service-sub">Frameworks that scale with your business growth.</p>
+            <ul>
+              <li>Revenue Model Optimization</li>
+              <li>Market Entry Strategies</li>
+              <li>Competitive Positioning</li>
+            </ul>
+            <p class="price">Starting at $2,500</p>
+          </div>
+
+          <div class="service">
+            <h3>Platform Development</h3>
+            <p class="service-sub">Enterprise-grade platforms built for performance &amp; security.</p>
+            <ul>
+              <li>Cloud-Native Architecture</li>
+              <li>API Development &amp; Integration</li>
+              <li>Performance Optimization</li>
+            </ul>
+            <p class="price">Starting at $5,000</p>
+          </div>
+
+          <div class="service">
+            <h3>Automated Systems</h3>
+            <p class="service-sub">Intelligent automation for efficiency and reliability.</p>
+            <ul>
+              <li>Workflow Automation</li>
+              <li>Data Processing Pipelines</li>
+              <li>Quality Assurance Systems</li>
+            </ul>
+            <p class="price">Starting at $3,500</p>
+          </div>
         </div>
       </div>
-      <!-- Card 3: Chatport -->
-      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition flex flex-col h-full">
-        <span class="inline-block text-xs tracking-widest uppercase text-blue-700 border border-blue-700/30 rounded-full px-3 py-1 mb-3 self-start">Free + Pro</span>
-        <h3 class="text-lg font-bold mb-2">Chatport</h3>
-        <p class="text-sm text-gray-600 mb-4 flex-1">Export your AI conversations to Markdown, PDF or HTML in one click. Works on ChatGPT, Claude, Gemini &amp; Perplexity. Nothing leaves your browser.</p>
-        <div class="mt-auto flex flex-wrap gap-2">
-          <a href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi" class="text-sm bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800">Add to Chrome — Free</a>
-          <a href="chatport.html" class="text-sm border border-blue-700 text-blue-700 px-4 py-2 rounded font-semibold hover:bg-blue-50">Details &amp; Pro</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>Why International Companies Choose Frohsinn LLC</h2>
+          <p class="about-copy">As a US-registered LLC focused on international projects, we provide global solutions with optimal tax efficiency and regulatory compliance.</p>
         </div>
-      </div>
-      <!-- Card 4: 48h Quick Fix -->
-      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-lg transition flex flex-col h-full">
-        <span class="inline-block text-xs tracking-widest uppercase text-blue-700 border border-blue-700/30 rounded-full px-3 py-1 mb-3 self-start">Sprint · 599 EUR</span>
-        <h3 class="text-lg font-bold mb-2">48h Automation Quick Fix</h3>
-        <p class="text-sm text-gray-600 mb-4 flex-1">One manual workflow mapped, simplified, and handed over with a runbook — fixed price, no retainer.</p>
-        <a href="quick-fix.html" class="mt-auto text-sm bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800 text-center">Book the Quick Fix →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto text-center mb-12 px-6">
-      <h2 class="text-4xl font-bold mb-4">Our Services</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Frohsinn LLC develops international digital solutions with a focus on scalability, compliance, and automation.  
-        We provide structured frameworks designed for global business operations.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6">
-      <!-- Service 1 -->
-      <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition">
-        <i class="fas fa-sitemap text-blue-700 text-4xl mb-4"></i>
-        <h3 class="text-2xl font-bold mb-3">Digital Business Models</h3>
-        <p class="text-gray-600 mb-4">Frameworks that scale with your business growth.</p>
-        <ul class="text-sm text-gray-600 space-y-2">
-          <li>✔ Revenue Model Optimization</li>
-          <li>✔ Market Entry Strategies</li>
-          <li>✔ Competitive Positioning</li>
-        </ul>
-        <p class="mt-4 font-semibold text-blue-700">Starting at $2,500</p>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition">
-        <i class="fas fa-code text-pink-600 text-4xl mb-4"></i>
-        <h3 class="text-2xl font-bold mb-3">Platform Development</h3>
-        <p class="text-gray-600 mb-4">Enterprise-grade platforms built for performance & security.</p>
-        <ul class="text-sm text-gray-600 space-y-2">
-          <li>✔ Cloud-Native Architecture</li>
-          <li>✔ API Development & Integration</li>
-          <li>✔ Performance Optimization</li>
-        </ul>
-        <p class="mt-4 font-semibold text-pink-600">Starting at $5,000</p>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition">
-        <i class="fas fa-cogs text-orange-500 text-4xl mb-4"></i>
-        <h3 class="text-2xl font-bold mb-3">Automated Systems</h3>
-        <p class="text-gray-600 mb-4">Intelligent automation for efficiency and reliability.</p>
-        <ul class="text-sm text-gray-600 space-y-2">
-          <li>✔ Workflow Automation</li>
-          <li>✔ Data Processing Pipelines</li>
-          <li>✔ Quality Assurance Systems</li>
-        </ul>
-        <p class="mt-4 font-semibold text-orange-500">Starting at $3,500</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose -->
-  <section id="about" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
-      <div>
-        <h2 class="text-4xl font-bold mb-6">Why International Companies Choose Frohsinn LLC</h2>
-        <p class="text-lg text-gray-600 mb-6">As a US-registered LLC focused on international projects, we provide global solutions with optimal tax efficiency and regulatory compliance.</p>
-        <ul class="space-y-4 text-gray-700">
-          <li>🌍 International Operations Only</li>
-          <li>📜 US-Registered Legal Entity</li>
-          <li>📈 Built for Global Scale</li>
-          <li>💰 Tax-Optimized Structure</li>
+        <ul class="fact-list on-dark">
+          <li>International Operations Only<span>Projects outside the US, built for cross-border work</span></li>
+          <li>US-Registered Legal Entity<span>A real Limited Liability Company you can verify</span></li>
+          <li>Built for Global Scale<span>Systems designed to grow across markets</span></li>
+          <li>Tax-Optimized Structure<span>Compliant setup with efficient operations</span></li>
         </ul>
       </div>
-      <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/02af05a2-f325-4039-9864-4b5e3d111300/public" alt="Team Strategy" class="rounded-xl shadow-lg">
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-12">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-      <div>
-        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC" class="h-16 mb-4">
-        <p class="text-sm opacity-80">Frohsinn LLC is a US-registered Limited Liability Company specializing in international digital business solutions.</p>
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC">
+          <p class="footer-about">Frohsinn LLC is a US-registered Limited Liability Company specializing in international digital business solutions.</p>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="quick-fix.html">48h Quick Fix</a></li>
+            <li><a href="blog/">Guides</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal &amp; Support</h2>
+          <ul>
+            <li><a href="legal.html">Legal Information</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h3 class="font-bold mb-3">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-sky-400">Home</a></li>
-          <li><a href="#products" class="hover:text-sky-400">Products</a></li>
-          <li><a href="#about" class="hover:text-sky-400">About Us</a></li>
-          <li><a href="#services" class="hover:text-sky-400">Services</a></li>
-          <li><a href="quick-fix.html" class="hover:text-sky-400">48h Quick Fix</a></li>
-          <li><a href="blog/" class="hover:text-sky-400">Guides</a></li>
-          <li><a href="contact.html" class="hover:text-sky-400">Contact</a></li>
-        </ul>
+      <div class="footer-meta">
+        <span>© 2026 Frohsinn LLC. All rights reserved.</span>
+        <span>Contact: <a href="mailto:mail@frohsinnglobal.com">mail@frohsinnglobal.com</a></span>
       </div>
-      <div>
-        <h3 class="font-bold mb-3">Legal & Support</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="legal.html" class="hover:text-sky-400">Legal Information</a></li>
-          <li><a href="privacy.html" class="hover:text-sky-400">Privacy Policy</a></li>
-          <li><a href="terms.html" class="hover:text-sky-400">Terms & Conditions</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="text-center text-sm opacity-70 mt-8">
-      © 2026 Frohsinn LLC. All rights reserved. · Contact: <a href="mailto:mail@frohsinnglobal.com" class="text-sky-400">mail@frohsinnglobal.com</a>
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.addEventListener('click', function (e) {
+        if (e.target.closest('a')) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

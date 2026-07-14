@@ -4,77 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Frohsinn LLC</title>
+  <meta name="description" content="Contact Frohsinn LLC — drop us a line and we'll get back to you.">
   <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
 </head>
 
-<body class="font-sans text-gray-800">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
-      <a href="index.html"><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC" class="h-16"></a>
-      <nav class="hidden md:flex space-x-8 font-medium">
-        <a href="index.html#products" class="hover:text-blue-600">Products</a>
-        <a href="index.html#services" class="hover:text-blue-600">Services</a>
-        <a href="blog/" class="hover:text-blue-600">Guides</a>
-        <a href="index.html#about" class="hover:text-blue-600">About</a>
-        <a href="#" class="hover:text-blue-600">Contact</a>
-        <a href="quick-fix.html" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">48h Quick Fix</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Frohsinn LLC — home">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M2 5.5h18M2 11h18M2 16.5h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M4.5 4.5l13 13m0-13l-13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#services">Services</a>
+        <a href="blog/">Guides</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn-primary" href="quick-fix.html">48h Quick Fix</a>
       </nav>
     </div>
   </header>
 
-  <!-- Contact -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto text-center mb-12 px-6">
-      <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Contact Frohsinn LLC — drop us a line and we'll get back to you.
-      </p>
-    </div>
-
-    <div class="max-w-md mx-auto px-6">
-      <div class="bg-white shadow rounded-xl p-8 text-center">
-        <h3 class="text-xl font-bold mb-2"><a href="mailto:mail@frohsinnglobal.com" class="text-blue-700 hover:text-blue-800">mail@frohsinnglobal.com</a></h3>
-        <p class="text-sm text-gray-600">General inquiries, projects &amp; support</p>
+  <main id="main">
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Contact Frohsinn LLC — drop us a line and we'll get back to you.</p>
+        <div class="contact-card">
+          <a href="mailto:mail@frohsinnglobal.com">mail@frohsinnglobal.com</a>
+          <p>General inquiries, projects &amp; support</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-12">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-      <div>
-        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC" class="h-16 mb-4">
-        <p class="text-sm opacity-80">Frohsinn LLC is a US-registered Limited Liability Company specializing in international digital business solutions.</p>
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" alt="Frohsinn LLC">
+          <p class="footer-about">Frohsinn LLC is a US-registered Limited Liability Company specializing in international digital business solutions.</p>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="quick-fix.html">48h Quick Fix</a></li>
+            <li><a href="blog/">Guides</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal &amp; Support</h2>
+          <ul>
+            <li><a href="legal.html">Legal Information</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h3 class="font-bold mb-3">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
-          <li><a href="index.html#products" class="hover:text-sky-400">Products</a></li>
-          <li><a href="index.html#about" class="hover:text-sky-400">About Us</a></li>
-          <li><a href="index.html#services" class="hover:text-sky-400">Services</a></li>
-          <li><a href="quick-fix.html" class="hover:text-sky-400">48h Quick Fix</a></li>
-          <li><a href="blog/" class="hover:text-sky-400">Guides</a></li>
-          <li><a href="contact.html" class="hover:text-sky-400">Contact</a></li>
-        </ul>
+      <div class="footer-meta">
+        <span>© 2026 Frohsinn LLC. All rights reserved.</span>
+        <span>Contact: <a href="mailto:mail@frohsinnglobal.com">mail@frohsinnglobal.com</a></span>
       </div>
-      <div>
-        <h3 class="font-bold mb-3">Legal & Support</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="legal.html" class="hover:text-sky-400">Legal Information</a></li>
-          <li><a href="privacy.html" class="hover:text-sky-400">Privacy Policy</a></li>
-          <li><a href="terms.html" class="hover:text-sky-400">Terms & Conditions</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="text-center text-sm opacity-70 mt-8">
-      © 2026 Frohsinn LLC. All rights reserved. · Contact: <a href="mailto:mail@frohsinnglobal.com" class="text-sky-400">mail@frohsinnglobal.com</a>
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.addEventListener('click', function (e) {
+        if (e.target.closest('a')) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
