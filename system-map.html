@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Das Frohsinn-System — Systemüberblick für Partner</title>
+  <meta name="description" content="Visueller Überblick über das gesamte System von Frohsinn LLC: Produkte, Preise, Auslieferung und Fundament.">
+  <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<style>
+  :root {
+    --navy:        oklch(0.30 0.06 255);
+    --navy-deep:   oklch(0.235 0.05 255);
+    --navy-line:   oklch(0.40 0.05 255);
+    --on-navy:     oklch(0.97 0.005 255);
+    --on-navy-dim: oklch(0.82 0.02 250);
+    --accent-on-navy: oklch(0.80 0.10 230);
+
+    --bg:      oklch(0.985 0.002 255);
+    --surface: oklch(0.955 0.006 255);
+    --card:    oklch(1 0 0);
+    --line:    oklch(0.885 0.01 255);
+    --line-soft: oklch(0.93 0.008 255);
+    --ink:     oklch(0.25 0.03 255);
+    --muted:   oklch(0.45 0.02 255);
+
+    --accent:      oklch(0.50 0.16 250);
+    --accent-soft: oklch(0.94 0.03 250);
+    --on-accent:   oklch(0.99 0 0);
+
+    --live:      oklch(0.48 0.11 155);
+    --live-soft: oklch(0.94 0.04 155);
+    --prep:      oklch(0.52 0.11 70);
+    --prep-soft: oklch(0.95 0.04 75);
+
+    --font: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+    --rail: 4.5rem;
+    --container: 68rem;
+    --radius: 10px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --navy:        oklch(0.32 0.055 255);
+      --navy-deep:   oklch(0.27 0.045 255);
+      --navy-line:   oklch(0.44 0.05 255);
+      --on-navy:     oklch(0.97 0.005 255);
+      --on-navy-dim: oklch(0.80 0.02 250);
+      --accent-on-navy: oklch(0.80 0.10 230);
+
+      --bg:      oklch(0.185 0.018 255);
+      --surface: oklch(0.225 0.022 255);
+      --card:    oklch(0.245 0.024 255);
+      --line:    oklch(0.34 0.03 255);
+      --line-soft: oklch(0.30 0.025 255);
+      --ink:     oklch(0.95 0.006 255);
+      --muted:   oklch(0.76 0.018 255);
+
+      --accent:      oklch(0.80 0.10 235);
+      --accent-soft: oklch(0.30 0.055 245);
+      --on-accent:   oklch(0.20 0.04 255);
+
+      --live:      oklch(0.80 0.12 155);
+      --live-soft: oklch(0.29 0.05 155);
+      --prep:      oklch(0.82 0.11 80);
+      --prep-soft: oklch(0.30 0.05 75);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --navy:        oklch(0.32 0.055 255);
+    --navy-deep:   oklch(0.27 0.045 255);
+    --navy-line:   oklch(0.44 0.05 255);
+    --on-navy:     oklch(0.97 0.005 255);
+    --on-navy-dim: oklch(0.80 0.02 250);
+    --accent-on-navy: oklch(0.80 0.10 230);
+
+    --bg:      oklch(0.185 0.018 255);
+    --surface: oklch(0.225 0.022 255);
+    --card:    oklch(0.245 0.024 255);
+    --line:    oklch(0.34 0.03 255);
+    --line-soft: oklch(0.30 0.025 255);
+    --ink:     oklch(0.95 0.006 255);
+    --muted:   oklch(0.76 0.018 255);
+
+    --accent:      oklch(0.80 0.10 235);
+    --accent-soft: oklch(0.30 0.055 245);
+    --on-accent:   oklch(0.20 0.04 255);
+
+    --live:      oklch(0.80 0.12 155);
+    --live-soft: oklch(0.29 0.05 155);
+    --prep:      oklch(0.82 0.11 80);
+    --prep-soft: oklch(0.30 0.05 75);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 { text-wrap: balance; margin: 0; line-height: 1.15; letter-spacing: -0.015em; }
+  p { margin: 0; }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  .wrap { max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    background: var(--navy-deep);
+    color: var(--on-navy);
+    padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(3rem, 6vw, 5rem);
+    border-bottom: 1px solid var(--navy-line);
+  }
+  .hero .eyebrow { color: var(--on-navy-dim); }
+  .hero h1 {
+    font-size: clamp(2.1rem, 6vw, 3.9rem);
+    font-weight: 700;
+    margin: 1.4rem 0 0;
+    max-width: 20ch;
+  }
+  .hero .lede {
+    color: var(--on-navy-dim);
+    font-size: clamp(1.05rem, 2vw, 1.28rem);
+    line-height: 1.55;
+    max-width: 56ch;
+    margin-top: 1.4rem;
+  }
+  .hero .rule { height: 1px; background: var(--navy-line); margin: clamp(2.2rem, 5vw, 3.2rem) 0 2rem; }
+
+  .figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr)); gap: 1.75rem 1.5rem; }
+  .figure .n {
+    font-family: var(--mono);
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    color: var(--on-navy);
+  }
+  .figure .l { color: var(--on-navy-dim); font-size: 0.9rem; line-height: 1.4; margin-top: 0.5rem; display: block; }
+
+  /* ---------- Stages ---------- */
+
+  .stage { padding: clamp(3rem, 7vw, 5rem) 0; border-bottom: 1px solid var(--line-soft); }
+  .stage.alt { background: var(--surface); }
+
+  .stage-grid { display: grid; grid-template-columns: var(--rail) minmax(0, 1fr); gap: 0; }
+
+  .rail { position: relative; }
+  .rail .num {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    width: 2.4rem; height: 2.4rem;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 1;
+  }
+  .stage.alt .rail .num { background: var(--card); }
+  .rail::after {
+    content: "";
+    position: absolute;
+    left: 1.2rem; top: 2.4rem; bottom: -6rem;
+    width: 1px;
+    background: var(--line);
+  }
+  .stage:last-of-type .rail::after { display: none; }
+
+  .stage-head h2 {
+    font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+    font-weight: 700;
+    margin-top: 0.15rem;
+  }
+  .stage-head .say {
+    color: var(--muted);
+    max-width: 62ch;
+    margin-top: 0.85rem;
+    font-size: 1.02rem;
+  }
+  .stage-body { margin-top: 2.25rem; }
+
+  @media (max-width: 640px) {
+    .stage-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .rail::after { display: none; }
+  }
+
+  /* ---------- Cards ---------- */
+
+  .cards { display: grid; gap: 1rem; }
+  .cols-2 { grid-template-columns: repeat(auto-fit, minmax(min(24rem, 100%), 1fr)); }
+  .cols-3 { grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr)); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.4rem 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .card h3 { font-size: 1.08rem; font-weight: 700; }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+  .card .kicker {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .pill {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.28em 0.7em;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .pill-live { background: var(--live-soft); color: var(--live); }
+  .pill-prep { background: var(--prep-soft); color: var(--prep); }
+  .pill-flat { background: var(--accent-soft); color: var(--accent); }
+
+  /* ---------- Product rows ---------- */
+
+  .products { display: grid; gap: 1rem; }
+  .product {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.4rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 1.25rem 2rem;
+    align-items: start;
+  }
+  .product-top { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+  .product-top h3 { font-size: 1.22rem; font-weight: 700; }
+  .product-what { color: var(--muted); font-size: 0.97rem; }
+  .product-meta { display: grid; gap: 0.75rem; }
+  .meta-row {
+    display: grid;
+    grid-template-columns: 6.25rem minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: baseline;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .meta-row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .meta-row dt {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .meta-row dd { margin: 0; font-size: 0.94rem; }
+  .price { font-family: var(--mono); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  @media (max-width: 720px) {
+    .product { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Flow ---------- */
+
+  .flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+  .flow-step {
+    flex: 1 1 11rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.05rem 1.1rem;
+  }
+  .flow-step .s {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.45rem;
+  }
+  .flow-step strong { display: block; font-size: 0.98rem; margin-bottom: 0.3rem; }
+  .flow-step span.d { color: var(--muted); font-size: 0.88rem; line-height: 1.45; }
+  .flow-arrow {
+    align-self: center;
+    color: var(--muted);
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 700px) {
+    .flow-arrow svg { transform: rotate(90deg); }
+  }
+
+  /* ---------- Price ladder ---------- */
+
+  .ladder { display: grid; gap: 0.5rem; margin-top: 0.5rem; }
+  .rung { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.3rem; }
+  .rung-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 0.7rem 1rem;
+    min-width: 0;
+  }
+  .rung-bar .amount {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    flex: 0 0 auto;
+    min-width: 5.5rem;
+  }
+  .rung-bar .label { font-size: 0.94rem; font-weight: 600; }
+  .rung-bar .note { color: var(--muted); font-size: 0.86rem; }
+  .rung-free .rung-bar { background: var(--surface); border-left-color: var(--line); }
+  .rung-free .amount { color: var(--muted); }
+  .stage.alt .rung-free .rung-bar { background: var(--card); }
+
+  .ladder-legend {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem;
+    margin-top: 1.25rem;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+
+  /* ---------- Foundation / navy panel ---------- */
+
+  .panel {
+    background: var(--navy);
+    color: var(--on-navy);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 4vw, 2.25rem);
+  }
+  .panel h3 { color: var(--on-navy); }
+  .panel-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: 1.25rem 2rem; margin-top: 1.5rem; }
+  .panel-list li { border-top: 1px solid var(--navy-line); padding-top: 0.9rem; }
+  .panel-list strong { display: block; font-size: 0.98rem; margin-bottom: 0.25rem; }
+  .panel-list span { color: var(--on-navy-dim); font-size: 0.9rem; line-height: 1.5; }
+
+  /* ---------- Sitemap ---------- */
+
+  .sitemap { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr)); gap: 1rem; }
+  .sm-group {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--card);
+    padding: 1.1rem 1.15rem;
+  }
+  .sm-group h4 { font-size: 0.85rem; font-family: var(--mono); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.7rem; }
+  .sm-group li { font-size: 0.92rem; padding: 0.28rem 0; border-bottom: 1px solid var(--line-soft); color: var(--ink); }
+  .sm-group li:last-child { border-bottom: 0; }
+  .sm-group li code { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
+
+  /* ---------- Takeaway ---------- */
+
+  .takeaway { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: 1rem; }
+  .take {
+    border-left: 3px solid var(--accent-on-navy);
+    padding: 0.2rem 0 0.2rem 1.1rem;
+  }
+  .take strong { display: block; font-size: 1.02rem; margin-bottom: 0.35rem; color: var(--on-navy); }
+  .take span { color: var(--on-navy-dim); font-size: 0.94rem; }
+
+  /* ---------- Footer ---------- */
+
+  .end {
+    background: var(--navy-deep);
+    color: var(--on-navy-dim);
+    padding: clamp(2.5rem, 6vw, 4rem) 0;
+  }
+  .end h2 { color: var(--on-navy); font-size: clamp(1.35rem, 3vw, 1.8rem); }
+  .end p { max-width: 60ch; margin-top: 0.9rem; font-size: 0.98rem; }
+  .end a { color: var(--on-navy); text-decoration-color: var(--navy-line); text-underline-offset: 3px; }
+  .end a:hover { text-decoration-color: currentColor; }
+  .end-meta {
+    margin-top: 2rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--navy-line);
+    font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.05em;
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem;
+  }
+
+  a:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  .reveal { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Frohsinn LLC · Systemüberblick · Stand August 2026</p>
+    <h1>Vom ersten Klick bis zur Rechnung</h1>
+    <p class="lede">
+      Was hier steht, ist gebaut und online — kein Konzept. Diese Seite führt einmal
+      durch das ganze System: von der Person, die uns zum ersten Mal begegnet,
+      bis zu dem Punkt, an dem gearbeitet und abgerechnet wird.
+    </p>
+
+    <div class="rule"></div>
+
+    <div class="figures">
+      <div class="figure">
+        <span class="n">4</span>
+        <span class="l">Produkte am Markt</span>
+      </div>
+      <div class="figure">
+        <span class="n">2</span>
+        <span class="l">Chrome-Erweiterungen, freigegeben im Web&nbsp;Store</span>
+      </div>
+      <div class="figure">
+        <span class="n">3</span>
+        <span class="l">Service-Pakete mit festen Einstiegspreisen</span>
+      </div>
+      <div class="figure">
+        <span class="n">17</span>
+        <span class="l">gebaute Seiten auf frohsinnglobal.com</span>
+      </div>
+      <div class="figure">
+        <span class="n">1</span>
+        <span class="l">Kundenprojekt als Referenz</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="stage reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">01</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Der Anfang</p>
+          <h2>Wie Menschen uns überhaupt finden</h2>
+          <p class="say">
+            Niemand sucht nach „Frohsinn LLC". Gesucht wird nach einem Problem.
+            Deshalb gibt es drei Türen, die alle in dasselbe Haus führen — und alle
+            drei sind offen.
+          </p>
+        </div>
+        <div class="stage-body cards cols-3">
+          <div class="card">
+            <span class="kicker">Tür 1</span>
+            <h3>Chrome Web Store</h3>
+            <p>Zwei eigene Browser-Erweiterungen liegen im offiziellen Google-Store und sind
+              kostenlos installierbar. Wer dort nach „Prompts speichern" oder „Chat exportieren"
+              sucht, kann bei uns landen.</p>
+          </div>
+          <div class="card">
+            <span class="kicker">Tür 2</span>
+            <h3>Google &amp; unsere Ratgeber</h3>
+            <p>Zwei ausführliche Anleitungen beantworten genau die Fragen, die unsere
+              Werkzeuge lösen — vollständig und ohne Verkaufsdruck. Wer die Antwort
+              gut findet, probiert danach das Werkzeug.</p>
+          </div>
+          <div class="card">
+            <span class="kicker">Tür 3</span>
+            <h3>Direkt &amp; Anzeigen</h3>
+            <p>Die Firmenseite als Anlaufstelle für alle, die uns empfohlen bekommen oder
+              über eine Anzeige kommen. Die meisten davon sind am Handy und
+              entscheiden in Sekunden.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="stage alt reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">02</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Die Bühne</p>
+          <h2>frohsinnglobal.com — 17 Seiten, eine Ordnung</h2>
+          <p class="say">
+            Die Website ist bewusst statisch gebaut: reine Dateien, kein Server, der
+            ausfallen kann, keine Datenbank, die gepflegt werden muss. Sie lädt schnell,
+            kostet fast nichts im Betrieb und ist trotzdem vollständig.
+          </p>
+        </div>
+        <div class="stage-body">
+          <div class="sitemap">
+            <div class="sm-group">
+              <h4>Einstieg</h4>
+              <ul>
+                <li>Startseite <code>/</code></li>
+                <li>Kontakt <code>/contact</code></li>
+              </ul>
+            </div>
+            <div class="sm-group">
+              <h4>Produkte</h4>
+              <ul>
+                <li>Operator Kit</li>
+                <li>SlashPrompt</li>
+                <li>Chatport</li>
+                <li>48h Quick Fix</li>
+                <li>2 × Danke-Seite nach Kauf</li>
+              </ul>
+            </div>
+            <div class="sm-group">
+              <h4>Inhalte</h4>
+              <ul>
+                <li>Ratgeber-Übersicht</li>
+                <li>Prompts speichern</li>
+                <li>Chats exportieren</li>
+              </ul>
+            </div>
+            <div class="sm-group">
+              <h4>Vertrauen &amp; Technik</h4>
+              <ul>
+                <li>Impressum</li>
+                <li>Datenschutz</li>
+                <li>AGB</li>
+                <li>Rechtliches</li>
+                <li>Etsy-Anbindung</li>
+                <li>Kundenpräsentation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cards cols-3" style="margin-top: 1rem;">
+            <div class="card">
+              <h3>Handy zuerst</h3>
+              <p>Navigation, Buttons und Preise funktionieren ab 375&nbsp;Pixel Breite —
+                der Größe eines normalen iPhones. Denn dort kommen die Käufer an.</p>
+            </div>
+            <div class="card">
+              <h3>Barrierefrei nach Standard</h3>
+              <p>Erfüllt WCAG 2.1 AA: lesbare Kontraste, vollständige Tastaturbedienung,
+                sichtbare Fokus-Markierung. Das ist bei Firmenkunden zunehmend eine
+                Einkaufsbedingung — kein Nice-to-have.</p>
+            </div>
+            <div class="card">
+              <h3>Eine Handschrift</h3>
+              <p>Farben, Schrift und Tonalität sind schriftlich festgelegt, nicht dem Zufall
+                überlassen. Jede neue Seite sieht automatisch aus wie die anderen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="stage reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">03</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Das Herzstück</p>
+          <h2>Vier Produkte, vier Preisklassen</h2>
+          <p class="say">
+            Jedes Produkt steht für sich und verdient eigenes Geld. Zusammen decken sie
+            die Spanne von „kostet nichts, überzeugt in 30 Sekunden" bis
+            „bezahlter Auftrag mit Übergabe" ab.
+          </p>
+        </div>
+
+        <div class="stage-body products">
+
+          <article class="product">
+            <div>
+              <div class="product-top">
+                <h3>SlashPrompt</h3>
+                <span class="pill pill-live">Live im Store</span>
+              </div>
+              <p class="product-what">
+                Eine Browser-Erweiterung, die häufig gebrauchte Texte speichert. Man tippt
+                einen Schrägstrich <strong>/</strong> ins Chatfenster, wählt aus einer Liste — und
+                der fertige Text steht da. Funktioniert bei ChatGPT, Claude, Gemini und Perplexity.
+              </p>
+            </div>
+            <dl class="product-meta">
+              <div class="meta-row"><dt>Für wen</dt><dd>Alle, die täglich mit KI arbeiten und dieselben Anweisungen immer wieder tippen.</dd></div>
+              <div class="meta-row"><dt>Preis</dt><dd><span class="price">Gratis</span> bis 20 Bausteine · <span class="price">Pro 19&nbsp;$</span> einmalig, kein Abo</dd></div>
+              <div class="meta-row"><dt>Auslieferung</dt><dd>Installation aus dem Chrome Web Store, Lizenzschlüssel per E-Mail</dd></div>
+            </dl>
+          </article>
+
+          <article class="product">
+            <div>
+              <div class="product-top">
+                <h3>Chatport</h3>
+                <span class="pill pill-live">Live im Store</span>
+              </div>
+              <p class="product-what">
+                Sichert ein KI-Gespräch mit einem Klick als sauberes Dokument — als Markdown,
+                PDF oder HTML. Kein Kopieren, kein Formatierungs-Chaos, Code-Blöcke bleiben
+                erhalten.
+              </p>
+            </div>
+            <dl class="product-meta">
+              <div class="meta-row"><dt>Für wen</dt><dd>Alle, die Ergebnisse aus KI-Chats archivieren, weitergeben oder ablegen müssen.</dd></div>
+              <div class="meta-row"><dt>Preis</dt><dd><span class="price">Gratis</span> für Markdown · <span class="price">Pro 14&nbsp;$</span> einmalig für PDF und HTML</dd></div>
+              <div class="meta-row"><dt>Auslieferung</dt><dd>Installation aus dem Chrome Web Store, Lizenzschlüssel per E-Mail</dd></div>
+            </dl>
+          </article>
+
+          <article class="product">
+            <div>
+              <div class="product-top">
+                <h3>Claude Code Operator Kit</h3>
+                <span class="pill pill-live">Verkauf läuft</span>
+              </div>
+              <p class="product-what">
+                Ein fertiges Startpaket für Entwickler, die mit KI-Programmierassistenten
+                arbeiten: erprobte Einstellungen, zwei eigene Automatisierungen, eine
+                Projektvorlage und ein Handbuch mit dem Erfahrungswissen dahinter.
+                In zehn Minuten eingerichtet.
+              </p>
+            </div>
+            <dl class="product-meta">
+              <div class="meta-row"><dt>Für wen</dt><dd>Entwickler und Teams, die nicht bei jedem Projekt bei null anfangen wollen.</dd></div>
+              <div class="meta-row"><dt>Preis</dt><dd><span class="price">29&nbsp;€</span> Einführungspreis (regulär 49&nbsp;€), einmalig</dd></div>
+              <div class="meta-row"><dt>Auslieferung</dt><dd>Sofort-Download, lebenslange Updates, 7 Tage Rückgaberecht · Gratis-Probe auf GitHub</dd></div>
+            </dl>
+          </article>
+
+          <article class="product">
+            <div>
+              <div class="product-top">
+                <h3>48h Automation Quick Fix</h3>
+                <span class="pill pill-live">Buchbar</span>
+              </div>
+              <p class="product-what">
+                Kein Produkt zum Herunterladen, sondern echte Arbeit mit festem Preis: Ein
+                konkreter Handgriff, der jede Woche Zeit frisst, wird aufgenommen,
+                vereinfacht und automatisiert. Danach gibt es eine einseitige Anleitung,
+                mit der das Team allein weiterkommt.
+              </p>
+            </div>
+            <dl class="product-meta">
+              <div class="meta-row"><dt>Für wen</dt><dd>Kleine Betriebe, Shops und Creator mit wiederkehrender Handarbeit — Anfragen, Nachfassen, Produktpflege.</dd></div>
+              <div class="meta-row"><dt>Preis</dt><dd><span class="price">599&nbsp;€</span> Festpreis · kein Abo, keine laufende Verpflichtung</dd></div>
+              <div class="meta-row"><dt>Auslieferung</dt><dd>4 Schritte: Ablauf schildern → Umfang bestätigen → umsetzen → Übergabe mit Anleitung</dd></div>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="stage alt reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">04</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Der Motor</p>
+          <h2>Warum wir Antworten verschenken</h2>
+          <p class="say">
+            Die Ratgeber im Blog verkaufen nichts. Sie beantworten die Frage vollständig —
+            auch die Wege ohne unser Werkzeug. Genau das erzeugt Vertrauen, und Vertrauen
+            ist der Grund, warum jemand danach auf „Installieren" klickt.
+          </p>
+        </div>
+        <div class="stage-body">
+          <div class="flow">
+            <div class="flow-step">
+              <span class="s">Schritt 1</span>
+              <strong>Jemand hat ein Problem</strong>
+              <span class="d">„Wie speichere ich meine besten ChatGPT-Prompts?"</span>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-5.5-5.5M20 7l-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="flow-step">
+              <span class="s">Schritt 2</span>
+              <strong>Unser Ratgeber antwortet</strong>
+              <span class="d">Ehrlich und komplett, inklusive der Methoden ohne uns.</span>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-5.5-5.5M20 7l-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="flow-step">
+              <span class="s">Schritt 3</span>
+              <strong>Die Abkürzung liegt bereit</strong>
+              <span class="d">Kostenlose Erweiterung, kein Konto, keine Anmeldung nötig.</span>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-5.5-5.5M20 7l-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="flow-step">
+              <span class="s">Schritt 4</span>
+              <strong>Die Grenze wird spürbar</strong>
+              <span class="d">Ab dem 21. Baustein lohnt sich Pro — einmalig, kein Abo.</span>
+            </div>
+          </div>
+          <p class="say" style="margin-top: 1.5rem;">
+            Derselbe Weg läuft für Chatport. Beide Ratgeber sind bereits geschrieben und
+            veröffentlicht; jeder weitere Ratgeber verlängert den Motor, ohne dass Werbung
+            zugekauft werden muss.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="stage reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">05</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Kasse &amp; Übergabe</p>
+          <h2>Was nach dem „Kaufen" passiert</h2>
+          <p class="say">
+            Bezahlt wird überall gleich: über Stripe, abgerechnet als Frohsinn LLC.
+            Danach unterscheidet sich nur, was ankommt.
+          </p>
+        </div>
+        <div class="stage-body cards cols-2">
+          <div class="card">
+            <span class="kicker">Erweiterungen</span>
+            <h3>Lizenzschlüssel per E-Mail</h3>
+            <p>Nach der Zahlung landet der Käufer auf einer eigenen Danke-Seite und bekommt
+              einen Schlüssel, den er in den Einstellungen der Erweiterung einfügt.
+              Für beide Erweiterungen gebaut und fertig.</p>
+          </div>
+          <div class="card">
+            <span class="kicker">Operator Kit</span>
+            <h3>Sofort-Download</h3>
+            <p>Direkt nach dem Kauf verfügbar, inklusive lebenslanger Updates und
+              7 Tagen Rückgaberecht ohne Nachfragen. Keine Auslieferung von Hand.</p>
+          </div>
+          <div class="card">
+            <span class="kicker">Quick Fix</span>
+            <h3>Zahlung erst nach Zusage</h3>
+            <p>Wir prüfen zuerst, ob der Fall in 48 Stunden lösbar ist. Passt er nicht, sagen
+              wir es vorher. Erst dann geht der Zahlungslink raus — das schützt beide Seiten.</p>
+          </div>
+          <div class="card">
+            <span class="kicker">Grundsatz</span>
+            <h3>Wir speichern nichts</h3>
+            <p>Beide Erweiterungen arbeiten zu 100&nbsp;% im Browser des Nutzers. Prompts und
+              Chatverläufe verlassen das Gerät nie. Das ist zugleich unser stärkstes
+              Verkaufsargument und der Grund, warum wir kaum Datenschutzrisiko tragen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="stage alt reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">06</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Die zweite Ebene</p>
+          <h2>Das Projektgeschäft</h2>
+          <p class="say">
+            Über den Produkten steht die klassische Auftragsarbeit — mit ausgewiesenen
+            Einstiegspreisen statt „auf Anfrage". Wer den Preis nennt, wird angerufen von
+            Leuten, die ihn zahlen können.
+          </p>
+        </div>
+        <div class="stage-body">
+          <div class="cards cols-3">
+            <div class="card">
+              <span class="kicker">ab 2.500&nbsp;$</span>
+              <h3>Digitale Geschäftsmodelle</h3>
+              <p>Wie verdient ein Angebot Geld, in welchem Markt startet es, wie grenzt es sich ab.</p>
+            </div>
+            <div class="card">
+              <span class="kicker">ab 3.500&nbsp;$</span>
+              <h3>Automatisierte Abläufe</h3>
+              <p>Wiederkehrende Arbeit wird zu einem Ablauf, der von selbst läuft und sich prüfen lässt.</p>
+            </div>
+            <div class="card">
+              <span class="kicker">ab 5.000&nbsp;$</span>
+              <h3>Plattform-Entwicklung</h3>
+              <p>Die technische Basis: Architektur in der Cloud, Schnittstellen, Geschwindigkeit.</p>
+            </div>
+          </div>
+
+          <div class="cards cols-2" style="margin-top: 1rem;">
+            <div class="card">
+              <div class="product-top">
+                <h3>URBN TRVL · Tokio 2026</h3>
+                <span class="pill pill-flat">Kundenprojekt</span>
+              </div>
+              <p>Ein vollständiger Wachstumsplan für eine Reise-Marke, gebaut als eigene
+                interaktive Präsentation mit zehn Kapiteln: Ausgangslage, Zielgruppen,
+                Strategie, Kundenreise, ein Achtwochen-Inhaltsplan und ein
+                30-Tage-Fahrplan mit Wochenzielen. Bewusst nicht öffentlich verlinkt —
+                das ist Kundenmaterial, kein Werbetext.</p>
+            </div>
+            <div class="card">
+              <div class="product-top">
+                <h3>Etsy-Anbindung</h3>
+                <span class="pill pill-prep">In Vorbereitung</span>
+              </div>
+              <p>Die technische Rückleitung für die Etsy-Schnittstelle steht bereits auf der
+                Domain bereit — der Baustein, den Etsy verlangt, bevor ein Shop
+                angebunden werden darf. Das Fundament für Shop-Automatisierung ist damit
+                gelegt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preistreppe -->
+  <section class="stage reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">↕</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Das Ganze in einem Bild</p>
+          <h2>Die Preistreppe</h2>
+          <p class="say">
+            Der eigentliche Trick ist nicht ein einzelnes Produkt, sondern die Leiter.
+            Jede Stufe verdient eigenes Geld <em>und</em> ist gleichzeitig die Eingangstür
+            zur nächsten. Wer heute die kostenlose Erweiterung installiert, kann in einem
+            Jahr Sprint-Kunde sein — ohne dass wir ihn je gekauft haben.
+          </p>
+        </div>
+        <div class="stage-body">
+          <div class="ladder">
+            <div class="rung rung-free">
+              <div class="rung-bar" style="width: 33%; min-width: 18rem;">
+                <span class="amount">0 €</span>
+                <span><span class="label">Erweiterung gratis</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 41%; min-width: 18rem;">
+                <span class="amount">14 $</span>
+                <span><span class="label">Chatport Pro</span> <span class="note">— einmalig</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 48%; min-width: 18rem;">
+                <span class="amount">19 $</span>
+                <span><span class="label">SlashPrompt Pro</span> <span class="note">— einmalig</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 57%; min-width: 18rem;">
+                <span class="amount">29 €</span>
+                <span><span class="label">Operator Kit</span> <span class="note">— Sofort-Download</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 70%; min-width: 18rem;">
+                <span class="amount">599 €</span>
+                <span><span class="label">48h Quick Fix</span> <span class="note">— erste echte Zusammenarbeit</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 82%; min-width: 18rem;">
+                <span class="amount">2.500 $</span>
+                <span><span class="label">Geschäftsmodell</span> <span class="note">— ab</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 91%; min-width: 18rem;">
+                <span class="amount">3.500 $</span>
+                <span><span class="label">Automatisierung</span> <span class="note">— ab</span></span>
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-bar" style="width: 100%; min-width: 18rem;">
+                <span class="amount">5.000 $</span>
+                <span><span class="label">Plattform</span> <span class="note">— ab</span></span>
+              </div>
+            </div>
+          </div>
+          <p class="ladder-legend">
+            <span>Balkenlänge = Preisstufe, nicht maßstabsgetreu.</span>
+            <span>Währungen so ausgewiesen wie auf den jeweiligen Produktseiten.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fundament -->
+  <section class="stage alt reveal">
+    <div class="wrap stage-grid">
+      <div class="rail"><div class="num">◆</div></div>
+      <div>
+        <div class="stage-head">
+          <p class="eyebrow">Darunter</p>
+          <h2>Das Fundament</h2>
+          <p class="say">
+            Der unsichtbare Teil — der, nach dem ein Partner als Zweites fragt.
+          </p>
+        </div>
+        <div class="stage-body">
+          <div class="panel">
+            <h3>Was das Ganze trägt</h3>
+            <ul class="panel-list">
+              <li>
+                <strong>Echte Rechtsform</strong>
+                <span>Frohsinn LLC, in den USA eingetragen und überprüfbar. Internationale Projekte, saubere Struktur.</span>
+              </li>
+              <li>
+                <strong>Rechtlich vollständig</strong>
+                <span>Impressum, Datenschutzerklärung und AGB sind veröffentlicht — nicht nachträglich anzufertigen.</span>
+              </li>
+              <li>
+                <strong>Eigene Domain, eigene Adressen</strong>
+                <span>frohsinnglobal.com inklusive www, mit Postfach unter eigener Domain statt Freemail.</span>
+              </li>
+              <li>
+                <strong>Alles versioniert</strong>
+                <span>Jede Änderung liegt nachvollziehbar in Git. Nichts existiert nur auf einem Rechner.</span>
+              </li>
+              <li>
+                <strong>Marke schriftlich festgelegt</strong>
+                <span>Farben, Schrift, Tonalität und Gestaltungsprinzipien sind dokumentiert — übergabefähig an jeden Dritten.</span>
+              </li>
+              <li>
+                <strong>Datenschutz durch Bauweise</strong>
+                <span>Die Werkzeuge senden nichts an uns. Was nie ankommt, kann auch nicht verloren gehen.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="end">
+  <div class="wrap">
+    <h2>Was ein Partner hier mitnimmt</h2>
+    <div class="takeaway" style="margin-top: 1.75rem;">
+      <div class="take">
+        <strong>Es existiert bereits</strong>
+        <span>Zwei Erweiterungen sind von Google freigegeben, vier Produkte sind kaufbar, siebzehn Seiten sind gebaut. Nichts davon ist Absicht — alles ist Zustand.</span>
+      </div>
+      <div class="take">
+        <strong>Es trägt nach oben und unten</strong>
+        <span>Von 0 € bis 5.000 $ in einer Linie. Selbstbedienung finanziert die Sichtbarkeit, das Projektgeschäft finanziert den Betrieb.</span>
+      </div>
+      <div class="take">
+        <strong>Es ist übergabefähig</strong>
+        <span>Marke, Recht, Technik und Abläufe sind dokumentiert. Ein Partner steigt in ein System ein, nicht in einen Kopf.</span>
+      </div>
+    </div>
+    <p style="margin-top: 2rem;">
+      Fragen, Zahlen im Detail oder ein Gespräch:
+      <a href="mailto:mail@frohsinnglobal.com">mail@frohsinnglobal.com</a> ·
+      <a href="https://frohsinnglobal.com">frohsinnglobal.com</a>
+    </p>
+    <div class="end-meta">
+      <span>Frohsinn LLC</span>
+      <span>Stand: August 2026</span>
+      <span>Quelle: Website-Repository frohsinnglobal.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
