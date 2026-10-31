@@ -10,8 +10,7 @@
   <meta property="og:title" content="Chatport — export your AI chats to PDF & Markdown" />
   <meta property="og:description" content="One-click export of ChatGPT, Claude, Gemini & Perplexity conversations. 100% local." />
   <meta property="og:url" content="https://frohsinnglobal.com/chatport.html" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="tailwind.css">
 </head>
 <body class="font-sans text-gray-800">
   <header class="bg-white shadow sticky top-0 z-50">
@@ -34,7 +33,7 @@
         <h1 class="text-4xl md:text-5xl font-bold leading-tight">Save your AI chats — <span class="text-sky-400">one click</span></h1>
         <p class="text-lg opacity-90">Export any ChatGPT, Claude, Gemini or Perplexity conversation to clean Markdown, PDF or HTML. Nothing is uploaded — it all happens in your browser.</p>
         <div class="flex flex-wrap gap-3">
-          <a href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi" class="bg-sky-400 text-black px-6 py-3 rounded font-semibold hover:bg-blue-300"><i class="fab fa-chrome mr-2"></i>Add to Chrome — Free</a>
+          <a href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi" class="bg-sky-400 text-black px-6 py-3 rounded font-semibold hover:bg-blue-300"><svg class="inline-block h-[1em] w-auto mr-2 align-[-0.125em]" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 256C0 209.4 12.47 165.6 34.27 127.1L144.1 318.3C166 357.5 207.9 384 256 384C270.3 384 283.1 381.7 296.8 377.4L220.5 509.6C95.9 492.3 0 385.3 0 256zM365.1 321.6C377.4 302.4 384 279.1 384 256C384 217.8 367.2 183.5 340.7 160H493.4C505.4 189.6 512 222.1 512 256C512 397.4 397.4 511.1 256 512L365.1 321.6zM477.8 128H256C193.1 128 142.3 172.1 130.5 230.7L54.19 98.47C101 38.53 174 0 256 0C350.8 0 433.5 51.48 477.8 128V128zM168 256C168 207.4 207.4 168 256 168C304.6 168 344 207.4 344 256C344 304.6 304.6 344 256 344C207.4 344 168 304.6 168 256z"/></svg>Add to Chrome — Free</a>
           <a href="#pricing" class="border border-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-blue-900">See Pro →</a>
         </div>
         <p class="text-sm opacity-70">Free Markdown export · Pro adds PDF &amp; HTML · one-time $14, no subscription.</p>
@@ -42,10 +41,10 @@
       <div class="bg-white/5 border border-white/15 rounded-xl p-6 text-sm">
         <div class="text-sky-300 text-xs uppercase tracking-wider mb-3">⤓ Export chat</div>
         <div class="space-y-2">
-          <div class="bg-white/10 rounded px-3 py-2">Copy as Markdown <span class="opacity-50">— free</span></div>
-          <div class="bg-white/10 rounded px-3 py-2">Download .md <span class="opacity-50">— free</span></div>
-          <div class="bg-white/10 rounded px-3 py-2 flex justify-between">Download PDF <span class="text-sky-300">PRO</span></div>
-          <div class="bg-white/10 rounded px-3 py-2 flex justify-between">Download HTML <span class="text-sky-300">PRO</span></div>
+          <div class="bg-white/10 rounded px-3 py-2">Copy as Markdown <span class="opacity-80">— free</span></div>
+          <div class="bg-white/10 rounded px-3 py-2">Download .md <span class="opacity-80">— free</span></div>
+          <div class="bg-white/10 rounded px-3 py-2 flex justify-between">Download PDF <span class="text-sky-200">PRO</span></div>
+          <div class="bg-white/10 rounded px-3 py-2 flex justify-between">Download HTML <span class="text-sky-200">PRO</span></div>
         </div>
       </div>
     </div>
@@ -53,9 +52,9 @@
 
   <section class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl shadow p-6"><i class="fas fa-bolt text-blue-600 text-2xl mb-3"></i><h3 class="font-bold mb-1">One click</h3><p class="text-sm text-gray-600">A button on every chat page. No copy-paste gymnastics.</p></div>
-      <div class="bg-white rounded-xl shadow p-6"><i class="fas fa-lock text-green-600 text-2xl mb-3"></i><h3 class="font-bold mb-1">100% local</h3><p class="text-sm text-gray-600">Your conversations are formatted in-browser and never uploaded.</p></div>
-      <div class="bg-white rounded-xl shadow p-6"><i class="fas fa-layer-group text-pink-600 text-2xl mb-3"></i><h3 class="font-bold mb-1">All the big ones</h3><p class="text-sm text-gray-600">ChatGPT, Claude, Gemini &amp; Perplexity in one extension.</p></div>
+      <div class="bg-white rounded-xl shadow p-6"><svg class="inline-block h-6 w-auto text-blue-600 mb-3" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288l111.5 0L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7l-111.5 0L349.4 44.6z"/></svg><h2 class="font-bold mb-1">One click</h2><p class="text-sm text-gray-600">A button on every chat page. No copy-paste gymnastics.</p></div>
+      <div class="bg-white rounded-xl shadow p-6"><svg class="inline-block h-6 w-auto text-green-600 mb-3" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/></svg><h2 class="font-bold mb-1">100% local</h2><p class="text-sm text-gray-600">Your conversations are formatted in-browser and never uploaded.</p></div>
+      <div class="bg-white rounded-xl shadow p-6"><svg class="inline-block h-6 w-auto text-pink-600 mb-3" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"/></svg><h2 class="font-bold mb-1">All the big ones</h2><p class="text-sm text-gray-600">ChatGPT, Claude, Gemini &amp; Perplexity in one extension.</p></div>
     </div>
   </section>
 
@@ -68,7 +67,7 @@
         <a href="https://chromewebstore.google.com/detail/pkjfkflcmfaigkffepfjohpglaokdgdi" class="block text-center border border-blue-700 text-blue-700 rounded py-2 font-semibold hover:bg-blue-50">Add to Chrome</a>
       </div>
       <div id="get" class="border-2 border-blue-500 rounded-xl p-7 relative">
-        <span class="absolute -top-3 left-7 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">LIFETIME</span>
+        <span class="absolute -top-3 left-7 bg-blue-700 text-white text-xs font-bold px-2 py-1 rounded">LIFETIME</span>
         <h3 class="text-xl font-bold">Pro</h3>
         <p class="text-3xl font-bold my-3">$14 <span class="text-base font-normal text-gray-500">one-time</span></p>
         <ul class="text-sm text-gray-600 space-y-2 mb-6"><li>✓ Everything in Free</li><li>✓ <b>PDF</b> export</li><li>✓ <b>HTML</b> export</li><li>✓ Lifetime updates</li></ul>
@@ -80,8 +79,8 @@
 
   <footer class="bg-blue-900 text-white py-10">
     <div class="max-w-6xl mx-auto px-6 text-sm flex flex-wrap gap-4 justify-between">
-      <span>© 2026 Frohsinn LLC · <a href="index.html" class="text-sky-400">frohsinnglobal.com</a></span>
-      <span><a href="privacy.html" class="text-sky-400">Privacy</a> · <a href="terms.html" class="text-sky-400">Terms</a> · <a href="mailto:mail@frohsinnglobal.com" class="text-sky-400">Support</a></span>
+      <span>© 2026 Frohsinn LLC · <a href="index.html" class="text-sky-300 underline underline-offset-2">frohsinnglobal.com</a></span>
+      <span><a href="privacy.html" class="text-sky-300 underline underline-offset-2">Privacy</a> · <a href="terms.html" class="text-sky-300 underline underline-offset-2">Terms</a> · <a href="mailto:mail@frohsinnglobal.com" class="text-sky-300 underline underline-offset-2">Support</a></span>
     </div>
   </footer>
 </body>
