@@ -6,9 +6,14 @@
   <title>Contact Frohsinn LLC</title>
   <meta name="description" content="Contact Frohsinn LLC — drop us a line and we'll get back to you.">
   <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://frohsinnglobal.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Frohsinn LLC">
+  <meta property="og:description" content="Contact Frohsinn LLC — drop us a line and we'll get back to you.">
+  <meta property="og:url" content="https://frohsinnglobal.com/contact.html">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
 </head>
 
@@ -73,6 +78,7 @@
           <h2>Legal &amp; Support</h2>
           <ul>
             <li><a href="legal.html">Legal Information</a></li>
+            <li><a href="imprint.html">Impressum</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
           </ul>
@@ -94,11 +100,16 @@
         var open = nav.classList.toggle('open');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
+      function close(returnFocus) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggle.focus();
+      }
       nav.addEventListener('click', function (e) {
-        if (e.target.closest('a')) {
-          nav.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-        }
+        if (e.target.closest('a')) close(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('open')) close(true);
       });
     })();
   </script>

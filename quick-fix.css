@@ -41,7 +41,7 @@ h3 { font-size: 22px; }
 .microcopy, .small { color: var(--soft); font-size: 14px; }
 .card { background: rgba(17,24,39,.78); border: 1px solid var(--line); border-radius: 28px; padding: 28px; box-shadow: var(--shadow); }
 .hero-card { backdrop-filter: blur(14px); }
-.badge { display: inline-flex; color: #062312; background: var(--accent-2); border-radius: 999px; padding: 6px 12px; font-weight: 800; font-size: 13px; }
+.badge, .card .badge { display: inline-flex; color: #062312; background: var(--accent-2); border-radius: 999px; padding: 6px 12px; font-weight: 800; font-size: 13px; }
 .checklist, .xlist { padding: 0; margin: 22px 0; list-style: none; }
 .checklist li, .xlist li { margin: 12px 0; padding-left: 28px; position: relative; color: var(--muted); }
 .checklist li::before { content: "✓"; color: var(--accent-2); position: absolute; left: 0; font-weight: 900; }

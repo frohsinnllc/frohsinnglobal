@@ -6,9 +6,14 @@
   <title>Frohsinn LLC – International Digital Solutions</title>
   <meta name="description" content="Frohsinn LLC is a US-registered company creating digital business models, automated platforms, and scalable systems for international markets.">
   <link rel="icon" href="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0c49d5fd-9884-4917-aafd-3ddb85d35f00/public" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://frohsinnglobal.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Frohsinn LLC – International Digital Solutions">
+  <meta property="og:description" content="Frohsinn LLC is a US-registered company creating digital business models, automated platforms, and scalable systems for international markets.">
+  <meta property="og:url" content="https://frohsinnglobal.com/">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
 </head>
 
@@ -49,7 +54,7 @@
           <a class="btn btn-light" href="quick-fix.html">Book the 48h Quick Fix</a>
           <a class="btn btn-outline" href="#services">Explore Services</a>
         </div>
-        <p class="sprint-note"><strong>Sprint offer:</strong> one manual workflow mapped, simplified, and handed over with a runbook for 599 EUR.</p>
+        <p class="sprint-note"><strong>Sprint offer:</strong> one manual workflow mapped, simplified, and handed over with a runbook for 599&nbsp;EUR.</p>
       </div>
     </section>
 
@@ -64,7 +69,7 @@
         <ul class="product-list">
           <li class="product-row">
             <div class="product-name">
-              <h3>Claude Code Operator Kit</h3>
+              <h3 translate="no">Claude Code Operator Kit</h3>
               <span class="product-tag">Product</span>
             </div>
             <p class="product-desc">The curated setup that makes AI coding agents productive on day one — tuned settings, original skills, a CLAUDE.md template, and the Operator's Playbook.</p>
@@ -75,7 +80,7 @@
 
           <li class="product-row">
             <div class="product-name">
-              <h3>SlashPrompt</h3>
+              <h3 translate="no">SlashPrompt</h3>
               <span class="product-tag">Free + Pro</span>
             </div>
             <p class="product-desc">Save your AI prompts and insert them with “/” in ChatGPT, Claude, Gemini &amp; Perplexity. Variable templates, folders, 100% local.</p>
@@ -87,7 +92,7 @@
 
           <li class="product-row">
             <div class="product-name">
-              <h3>Chatport</h3>
+              <h3 translate="no">Chatport</h3>
               <span class="product-tag">Free + Pro</span>
             </div>
             <p class="product-desc">Export your AI conversations to Markdown, PDF or HTML in one click. Works on ChatGPT, Claude, Gemini &amp; Perplexity. Nothing leaves your browser.</p>
@@ -100,7 +105,7 @@
           <li class="product-row">
             <div class="product-name">
               <h3>48h Automation Quick Fix</h3>
-              <span class="product-tag">Sprint · 599 EUR</span>
+              <span class="product-tag">Sprint · 599&nbsp;EUR</span>
             </div>
             <p class="product-desc">One manual workflow mapped, simplified, and handed over with a runbook — fixed price, no retainer.</p>
             <div class="product-actions">
@@ -198,6 +203,7 @@
           <h2>Legal &amp; Support</h2>
           <ul>
             <li><a href="legal.html">Legal Information</a></li>
+            <li><a href="imprint.html">Impressum</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
           </ul>
@@ -219,11 +225,16 @@
         var open = nav.classList.toggle('open');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
+      function close(returnFocus) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (returnFocus) toggle.focus();
+      }
       nav.addEventListener('click', function (e) {
-        if (e.target.closest('a')) {
-          nav.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-        }
+        if (e.target.closest('a')) close(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('open')) close(true);
       });
     })();
   </script>
